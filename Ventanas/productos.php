@@ -13,7 +13,7 @@
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke-width="1.5"
-					stroke="currentColor"
+					stroke="currentColor"	
 					class="icon-cart"
 				>
 					<path
@@ -54,7 +54,7 @@
                     <div class="cart-total">
                         <h3>Total:</h3>
                         <span class="total-pagar">$200</span>
-						<button class="btn_pagar">Pagar</button>
+						<button id="btn-realizar-pedido" class="btn_pagar" data-check-login>Realizar Pedido</button>
                     </div>
 					
 				</div>
@@ -180,7 +180,8 @@
 				</div>
 			</div>
 		</div>
-		
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="module" src="../js/productos.js"></script>
 		
 		

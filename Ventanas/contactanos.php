@@ -7,7 +7,7 @@
       <div class="slider-viewport">
         <div class="slide" id="slide1"><img src="../media/hsitoriacacao.jpg" alt=""></div>
         <div class="slide" id="slide2"><img src="../media/beneficios.png"  alt=""></div>
-        <div class="slide" id="slide3">3</div>
+        <div class="slide" id="slide3"><img src="../media/hsitoriacacao.jpg" alt=""></div>
         <div class="slide" id="slide4">4</div>
       </div>
       <div class="links">

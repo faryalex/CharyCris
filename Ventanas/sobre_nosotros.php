@@ -24,7 +24,7 @@
       <div class="card element-1">
         <div class="header">
           <div class="date">MISION</div>
-          <div class="title">Nuestra mision es...f.</div>
+          <div class="title">Nuestra mision es fomentar en nuestros clientes el cosnumo de productos que no dañen su salud y mejoren su calidad de vida</div>
         </div>
         <div class="footer">
           <div class="author">
@@ -38,8 +38,8 @@
 
       <div class="card element-2">
         <div class="header">
-          <div class="date">VISION</div>
-          <div class="title">Nuestra vision es....</div>
+          <div class="date">CharyCris</div>
+          <div class="title">Vision </div>
         </div>
         <div class="footer">
           <div class="author">
@@ -53,9 +53,9 @@
 
       <div class="card element-3">
         <div class="header">
-          <div class="date">NUESTROS DESARROLLADORES</div>
+          <div class="date">NUESTROS DESARROLLADORES </div>
           <div class="title">
-           
+           <a href="../Ventanas/desarrolladores.php">Visita informacion de los desarrolladores </a>
  
           </div> 
         </div>

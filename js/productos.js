@@ -125,47 +125,51 @@ const showHTML = () =>{
 
 };
 
-
-
-
-
+const btn_pagar = document.querySelector('.cart-total')
+btn_pagar.addEventListener('click', (e) => {
+  console.log("hola desdejs");
+ 
+    $.ajax({
+      url: '../Configuraciones/verificar-sesion.php',
+      success: function(response) {
+        if (response == 'ok') {
+          // Si la sesión está iniciada, realizar la acción deseada
+          alert('Sesión iniciada, procesando pedido...');
+        } else {
+          // Si la sesión no está iniciada, mostrar un mensaje de error
+          alert('Debes iniciar sesión antes de realizar el pedido.');
+          window.location.href = "../Ventanas/login.php";
+        }
+      }
+    });
+    return false;
+});
+/*
 ///////////////////Enviar correo//////////////////////////
-///////////enviar whatsapp///////////
 const btn_pagar = document.querySelector('.cart-total')
 btn_pagar.addEventListener('click', (e) => {
     if(e.target.classList.contains('btn_pagar')){
-    console.log("hola mundo")
-    
-    /*var carrito = {
-  productos: [
-    { id: 1, nombre: "Producto 1", precio: 10 },
-    { id: 2, nombre: "Producto 2", precio: 20 },
-    { id: 3, nombre: "Producto 3", precio: 30 }
-  ],
-  total: 0
-};*/
-    var carrito = allProducts;
+    console.log(allProducts)
+// Convertir el array a JSON
+let jsonData = JSON.stringify(allProducts);
 
-/* Calcular el total del carrito
-for (var i = 0; i < carrito.productos.length; i++) {
-  carrito.total += carrito.productos[i].precio;
-}*/
-
-    $.ajax({
-    type:"POST",
-    url: "../Ventanas/enviar.php", // URL del archivo PHP que procesa la solicitud
-    type: "POST", // Tipo de solicitud
-    data: { variable: JSON.stringify(carrito)}, // Variable que se envía al servidor
-    success: function(respuesta) {
-        // Código que se ejecuta si la solicitud se realiza correctamente
-        alert("Se ha enviado el correo");
-    },
-    error: function(xhr, status, error) {
-        // Código que se ejecuta si hay un error al realizar la solicitud
-        console.log("Error: " + error);
-    }
+// Enviar la solicitud POST al archivo PHP
+fetch('../Ventanas/enviar.php', {
+  method: 'POST',
+  body: jsonData
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Error en la solicitud');
+  }
+  return response.json();
+})
+.then(data => {
+  console.log(data);
+})
+.catch(error => {
+  console.error(error);
 });
 
-
 }   
-})
+})*/

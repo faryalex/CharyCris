@@ -22,8 +22,8 @@
       </div>
     </header>
       <!-- Contador de visitas -->
-<center><a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=9448"></a><br><a>Visitas a la Pagina</a><br><a href='http://www.websmultimedia.com/registro-de-marcas-y-logotipos'></a></center>
+<center>
+<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=9448"></a><br><a>Visitas</a></center>
 <!-- Fin Contador de visitas -->
    
   </body>

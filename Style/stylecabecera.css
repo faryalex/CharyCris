@@ -1,45 +1,15 @@
-*{
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	
-}
-nav{
-	background: #9b4207;
-	height: 80px;
-	width: 100%;
+
+.b{
+  background-color: rgb(80, 65, 26);
+  margin-left: 0px;
+  height: 80px;
 }
 
-nav ul li{
-	display: inline-block;
-
+.navbar-brand img {
+  width: 100px !important;
+  height: 130px !important;
 }
-nav ul li a{
-	color:#fff;
-	display: block;
-	padding: 10px 65px;
-	text-decoration: none;
-
-	
-	
-}
-div a.active, li a:hover{
-	background: #FDEEC4;
-	transition: .5s;
-}
-.logo{
-
-	background: url(../media/imgat.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	height: 200px;
-	padding: 150px;
-	margin: 0;
-
-}
-.nav-tt{
-	
+.c {
+  margin-right: 30px !important;
+  
 }
