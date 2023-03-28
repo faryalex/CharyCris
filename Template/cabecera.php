@@ -16,57 +16,66 @@
 
 <body>
 <nav class="navbar navbar-expand-lg b">
-<a class="navbar-brand" href="#">
-    <img src="../media/logo.png" alt="Logo" class="logo-img">
-  </a>
-  <ul  class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="../index.php">Inicio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../Ventanas/productos.php">PRODUCTOS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../Ventanas/sobre_nosotros.php">SOBRE NOSOTROS</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../Ventanas/contactanos.php">CONTACTANOS</a>
-    </li>
-    </ul>
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../media/logo.png" alt="Logo" class="logo-img">
+    </a>
 
-    <?php
-  session_start();
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  // Verificar si el usuario ha iniciado sesión
-  if (isset($_SESSION['usuario'])) {
-    $usuario = $_SESSION['usuario'];
-?>
-    <nav class="c">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.php">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Ventanas/productos.php">PRODUCTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Ventanas/sobre_nosotros.php">SOBRE NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Ventanas/contactanos.php">CONTACTANOS</a>
+        </li>
+      </ul>
+
+      <?php
+        session_start();
+
+        if (isset($_SESSION['usuario'])) {
+          $usuario = $_SESSION['usuario'];
+      ?>
+
       <ul class="navbar-nav ml-auto">
-        <li class="dropdown c" >
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <?php echo $usuario; ?>
-          </button>
+          </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- Aquí se agregarán las opciones del menú -->
             <a class="dropdown-item" href="../Configuraciones/logout.php">Cerrar sesión</a>
           </div>
         </li>
       </ul>
-    </nav>
-<?php
-  } else {
-    // Si el usuario no ha iniciado sesión, mostrar el botón de inicio de sesión
-?>
-    <nav class="c">
+
+      <?php
+        } else {
+      ?>
+
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="../Ventanas/login.php">Iniciar sesión</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Ventanas/registro.php">Registrarse</a>
+        </li>
       </ul>
-    </nav>
-<?php
-  }
-?>
+
+      <?php
+        }
+      ?>
+    </div>
+  </div>
 </nav>
 

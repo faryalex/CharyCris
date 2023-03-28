@@ -1,16 +1,5 @@
-
-body{
-    
-    font-family: 'Roboto', sans-serif;
-margin: 0;
-}
-
 h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 1.25em;}
-p{ font-size: 1.25em;}
-
-button{
+button {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 30px;
@@ -18,40 +7,12 @@ button{
     border: 2px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: blueviolet;
+    background-color: rgb(80, 65, 26);
+    text-decoration: none; /* Quitar subrayado */
+    transition: background-color 0.3s ease-in-out; /* Agregar transición */
 }
-button:hover{
-    background-color: rgb(156, 96, 212);
-}
-
-.container{
-    max-width: 1250px;
-    margin: auto;
-
-}
-header{
-    background-color: rgb(245,245,245);
-    font-weight: bold;
-}
-header .logo{
-    margin: 0;
-    padding: 25px 30px ;
-    color: blueviolet;
-    font-size: 1.50em;
-}
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-header :hover{
-    color: blueviolet;
+button:hover {
+    background-color: rgb(96, 143, 9); /* Cambiar color al pasar el mouse por encima */
 }
 #hero{
     display: flex;
@@ -71,30 +32,7 @@ header :hover{
     background-size: cover;
     background-position: center;
 }
+
 #hero h1{
     color: white;
-}
-
-#historia .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-@media (min-width: 720px){
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header nav{
-        flex-direction: row;
-        display: inline-block;
-        padding-bottom: 0;
-        padding-right: 10px;
-    }
-    button{
-        
-        justify-content: space-around;
-
-    }
-
 }
