@@ -1,82 +1,76 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../media/Azul-Gris.jpg);
-    display: inline-block;
-    
-    height: 100;
-    position: relative;
-    overflow: hidden;
-    
-  }
-  
-  .cards {
-    display: flex;
-    width: 130%;
-    padding: 50px;
-  }
-  
-  .card {
-    background: rgb(154, 171, 192);
-    background: linear-gradient(
-      90deg,
-      rgb(172, 99, 39) 1%,
-      rgb(211, 176, 101) 100%
-    );
-    color: white;
-    width: 300px;
-    height: 350px;
-    border-radius: 10px;
-    padding: 30px;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  
-    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
-      -5px 0 10px rgba(0, 0, 0, 0.1);
-  
-    transition: all 0.3s ease;
-  }
-  
-  .card a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    
-  }
-  
-  .card a:hover {
-    color: lightyellow;
-  }
-  
-  .card:hover {
-    margin-right: 80px;
-    transform: rotate(3deg) translateY(-15px);
-  }
-  
-  .card .header {
-    flex: 1;
-  }
-  
-  .card .header .date {
-    padding: 10px 0;
-  }
-  
-  .card .header .title {
-    font-size: 28px;
-  }
-  
-  card[class*="element"] {
-    margin-left: -100px;
-  }
-  
-  .element-1:hover,
-  .element-2:hover {
-    margin-left: -130px;
-  }
-  
+  font-family:'Open Sans', sans-serif;
+font-size:14px;
+background-image:url(../media/so1.png);
+}
 
-  /* CSS DE PROFILES DE PROGRAMADORES  */
+h1, h2, h3, h4, h5, h6 {
+font-family:'Open Sans', sans-serif;
+}
 
+h1 {
+line-height:50px;
+font-weight:900;
+font-size:30px;
+text-transform:uppercase;
+text-align:center;
+color:#E91C1C;
+}
+h1::after {
+display: block;
+content: "";
+height: 2px;
+width: 150px;
+background: #E91C1C;
+margin: 5px auto 40px;
+}
+
+
+.text-center {
+text-align:center;
+}
+
+h2 {
+line-height:50px;
+color:#E91C1C;
+}
+h3 {
+line-height:30px;
+padding-bottom:20px;
+}
+h4 {
+padding-top: 25px;
+line-height: 40px;
+padding-bottom: 0px;
+font-size: 22px;
+font-weight: 900;
+
+}
+.adjst {
+padding-top: 0px;
+}
+.c-main {
+color:#E91C1C;
+}
+p {
+font-weight:300;
+line-height:30px;
+padding-bottom:15px;
+}
+
+.space-free {
+height:100px;
+}
+
+.btn {
+  background: #1f2542f1;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+div a.active, div a:hover{
+	background: #7ebe6e;
+	transition: .5s;
+}
