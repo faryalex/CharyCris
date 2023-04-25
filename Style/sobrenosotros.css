@@ -1,76 +1,77 @@
-body {
-  font-family:'Open Sans', sans-serif;
-font-size:14px;
-background-image:url(../media/so1.png);
+body{
+font-family:'Open Sans', sans-serif !important;
+font-size:14px !important;
+background-image:url(../media/so1.png) !important;
+text-align: center !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family:'Open Sans', sans-serif;
+font-family:'Open Sans', sans-serif !important;
 }
 
 h1 {
-line-height:50px;
-font-weight:900;
-font-size:30px;
-text-transform:uppercase;
-text-align:center;
-color:#E91C1C;
+line-height:50px !important;
+font-weight:900 !important;
+font-size:30px !important;
+text-transform:uppercase !important;
+text-align:center !important;
+color:#E91C1C !important;
 }
 h1::after {
-display: block;
-content: "";
-height: 2px;
-width: 150px;
-background: #E91C1C;
-margin: 5px auto 40px;
+display: block !important;
+content: "" !important;
+height: 2px !important;
+width: 150px !important;
+background: #E91C1C !important;
+margin: 5px auto 40px !important;
 }
 
 
-.text-center {
-text-align:center;
-}
+
 
 h2 {
-line-height:50px;
-color:#E91C1C;
+line-height:50px !important;
+color:#E91C1C !important;
 }
 h3 {
-line-height:30px;
-padding-bottom:20px;
+line-height:30px !important;
+padding-bottom:20px !important;
 }
 h4 {
-padding-top: 25px;
-line-height: 40px;
-padding-bottom: 0px;
-font-size: 22px;
-font-weight: 900;
+padding-top: 25px !important;
+line-height: 40px !important;
+padding-bottom: 0px !important;
+font-size: 22px !important;
+font-weight: 900 !important;
 
 }
 .adjst {
-padding-top: 0px;
+padding-top: 0px !important;
 }
 .c-main {
-color:#E91C1C;
+color:#E91C1C !important;
 }
 p {
-font-weight:300;
-line-height:30px;
-padding-bottom:15px;
+font-weight:300 !important;
+line-height:30px !important;
+padding-bottom:15px !important;
 }
 
 .space-free {
-height:100px;
+height:100px !important;
 }
 
 .btn {
-  background: #1f2542f1;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
+  background: #1f2542f1 !important;
+  color: #fff !important;
+  font-size: 1.2rem !important;
+  padding: 1rem 2rem !important;
+  text-decoration: none !important;
+  
 }
 
 div a.active, div a:hover{
-	background: #7ebe6e;
-	transition: .5s;
+	background: #7ebe6e !important;
+	transition: .5s !important;
 }
+
