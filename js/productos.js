@@ -134,7 +134,38 @@ btn_pagar.addEventListener('click', (e) => {
       success: function(response) {
         if (response == 'ok') {
           // Si la sesión está iniciada, realizar la acción deseada
-          alert('Sesión iniciada, procesando pedido...');
+          if (confirm('¿Desea realizar el pedido?')) {
+            ///////////////////Enviar correo//////////////////////////
+            if(e.target.classList.contains('btn_pagar')){
+              console.log(allProducts)
+              // Convertir el array a JSON
+              let jsonData = JSON.stringify(allProducts);
+  
+              // Enviar la solicitud POST al archivo PHP
+              fetch('../Ventanas/enviar.php', {
+                method: 'POST',
+                body: jsonData
+              })
+              .then(response => {
+                if (!response.ok) {
+                  throw new Error('Error en la solicitud');
+                }
+                return response.json();
+              })
+              .then(data => {
+                console.log(data);
+              })
+              .catch(error => {
+                console.error(error);
+              });
+            }
+          } else {
+            // El usuario ha hecho clic en "Cancelar"
+            // Coloca aquí el código que deseas ejecutar cuando el usuario haya hecho clic en "Cancelar"
+            window.location.href = "../Ventanas/productos.php";
+          }
+          alert('Pedido realizado con exito, en unos instantes un asesor se comunicara contigo');
+          window.location.href = "../Ventanas/productos.php";
         } else {
           // Si la sesión no está iniciada, mostrar un mensaje de error
           alert('Debes iniciar sesión antes de realizar el pedido.');
@@ -144,32 +175,4 @@ btn_pagar.addEventListener('click', (e) => {
     });
     return false;
 });
-/*
-///////////////////Enviar correo//////////////////////////
-const btn_pagar = document.querySelector('.cart-total')
-btn_pagar.addEventListener('click', (e) => {
-    if(e.target.classList.contains('btn_pagar')){
-    console.log(allProducts)
-// Convertir el array a JSON
-let jsonData = JSON.stringify(allProducts);
 
-// Enviar la solicitud POST al archivo PHP
-fetch('../Ventanas/enviar.php', {
-  method: 'POST',
-  body: jsonData
-})
-.then(response => {
-  if (!response.ok) {
-    throw new Error('Error en la solicitud');
-  }
-  return response.json();
-})
-.then(data => {
-  console.log(data);
-})
-.catch(error => {
-  console.error(error);
-});
-
-}   
-})*/

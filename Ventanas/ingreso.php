@@ -5,16 +5,13 @@
 <body>
     <section class="form-login">
         <h5>INICIAR SESION EN CHARYCRIS</h5>
-        <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-        <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
+        <form method="POST" action="../Configuraciones/autenticar.php">
+        <input class="controls" type="text" name="usuario" placeholder="Usuario">
+        <input class="controls" type="password" name="contrasena" placeholder="Contraseña">
         <input class="buttons" type="submit" name="" value="Ingresar">
+        </form>
         <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
   
       </section>
-  
-    <?php
-    include("../Configuraciones/conexion_bd.php");
-    include("../Configuraciones/validarlogin.php");
-    ?>
 </body>
 </html>
