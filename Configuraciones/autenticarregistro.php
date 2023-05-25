@@ -13,17 +13,20 @@ if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['user'])
 
   // Validar los datos
   if(empty($nombre) || empty($apellido) || empty($user) || empty($password) || empty($correo) || empty($telefono)) {
-    echo "Por favor, complete todos los campos requeridos.";
+    echo "<script>alert('Complete todos los campos');</script>"; 
+    echo "<script>window.history.back();</script>";
     exit();
   }
 
   if(!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-    echo "El correo electrónico no es válido.";
+    echo "<script>alert('correo electronico no es valido');</script>"; 
+    echo "<script>window.history.back();</script>";
     exit();
   }
 
   if(!preg_match("/^[0-9]{10}$/", $telefono)) {
-    echo "El número de teléfono no es válido.";
+    echo "<script>alert('El numero de telefono no es valido');</script>"; 
+    echo "<script>window.history.back();</script>";
     exit();
   }
 
@@ -36,10 +39,12 @@ if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['user'])
   if($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     if($row['user'] === $user) {
-      echo "El usuario ya existe en la base de datos.";
+      echo "<script>alert('El nombre de usuario ya se encuentra registrado');</script>"; 
+      echo "<script>window.history.back();</script>";
       exit();
     } else if($row['email'] === $correo) {
-      echo "El correo electrónico ya está registrado.";
+      echo "<script>alert('El correo electronico ya se encuentra registrado');</script>"; 
+      echo "<script>window.history.back();</script>";
       exit();
     }
   }
@@ -49,8 +54,7 @@ if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['user'])
   $stmt->bind_param("ssssss", $nombre, $apellido, $user, $password, $correo, $telefono);
 
   if($stmt->execute()) {
-    header("Location: ../Ventanas/login.php");
-    
+    echo "<script>alert('REGISTRO EXITOSO');</script>"; 
   } else {
     echo "Error al registrar usuario: " . $stmt->error;
   }
