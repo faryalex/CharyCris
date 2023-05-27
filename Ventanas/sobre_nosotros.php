@@ -18,7 +18,7 @@
                 
                
                 <div class="text-center g-pad-bottom">
-                    <div class="col-md-4 col-sm-4">
+                    <div>
                             <i class="fa fa-fire-extinguisher fa-5x faa-vertical animated c-main "></i>
                             <h4 >Mision de CharyCris </h4>
                             <p>
@@ -28,7 +28,7 @@
                             </p>
                             
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div>
                             <i class="fa fa-coffee fa-5x faa-ring animated c-main "></i>
                             <h4>Vision de CharyCris </h4>
                             <p>
@@ -39,12 +39,12 @@
                             
                     </div>
                    
-                    <div class="col-md-4 col-sm-4 d">
+                    <div>
     <i class="fa fa-gavel fa-5x faa-shake animated c-main "></i>
     <h4>Contactanos y visita la informacion de nuestros desarrolladores </h4>
     <div class="btn-group btn-group-justified">
-        <a href="../Ventanas/contactoo.html" class="btn mr-2">Visitar Redes</a>
-        <a href="../Ventanas/desarrolladores.html" class="btn mr-2">Ver Desarrolladores</a>
+        <a href="../Ventanas/contactoo.html" class="btn mr-2">Visitar  Redes</a>
+        <a href="../Ventanas/desarrolladores.php" class="btn mr-2">Desarrolladores</a>
     </div>
 </div>
 
