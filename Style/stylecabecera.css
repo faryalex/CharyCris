@@ -13,7 +13,7 @@
 
 .b {
   position: relative;
-  background-color: rgb(80, 65, 26);
+  background-color: rgb(0, 0, 0);
   margin-left: 0;
   height: 100px;
   display: flex;
@@ -36,18 +36,18 @@
 .nav-link {
   font-size: 1em;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid rgba(196, 194, 194, 0.5);
-  box-shadow: 2px 2px 10px rgba(236, 234, 234, 0.5);
+  /* padding: 10px 20px;
+  border-radius: 10px; */
+   /* border: 2px solid rgba(117, 6, 6, 0.5);/* Borde de botones   */   
+  box-shadow: 2px 2px 10px rgb(9, 101, 116);
   color: white;
-  background-color: rgb(58, 56, 53);
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
 }
 
 .navbar-nav a:hover {
-  background-color: rgb(120, 95, 46);
+  background: #1045b8;
 }
 
 .navbar-nav li {
@@ -90,7 +90,7 @@
 
 .menu-open .menu-toggle:before,
 .menu-open .menu-toggle:after {
-  background-color: rgb(58, 56, 53);
+  background-color: rgb(248, 149, 0);
 }
 
 .menu-open .menu-toggle:before {
@@ -104,7 +104,15 @@
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
+    
   }
+  #myButton {
+    background-color: blue; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    /* Agrega otros estilos según tus necesidades */
+  }
+  
 }
 
 

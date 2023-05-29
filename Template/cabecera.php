@@ -22,7 +22,7 @@
     <a class="navbar-brand" href="#">
       <img src="../media/logo.png" alt="Logo" class="logo-img">
     </a>
-
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i> <!-- Reemplaza con el ícono de FontAwesome que desees -->
     </button>
@@ -40,7 +40,7 @@
           <a class="nav-link" href="../Ventanas/sobre_nosotros.php">SOBRE NOSOTROS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/contactanos.php">CONTACTANOS</a>
+          <a class="nav-link" href="../Ventanas/contactanos.php">PROMOCIONES</a>
         </li>
       </ul>
 
