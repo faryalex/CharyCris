@@ -1,58 +1,51 @@
 <?php include("../Template/cabecera.php"); ?>
-
-
+<?php include("../Template/btnWhat.php"); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Style/sobrenosotros.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Cards - Tarjetas con efecto Hover</title>
+	<link rel="stylesheet" href="../Style/Stylenosotros.css">
 </head>
 <body>
-    <section  id="services-sec">
-        <div class="container">
-            <div class="row ">
-                <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs "></i> Sobre Nosotros  </h1>
-                
-               
-                <div class="text-center g-pad-bottom">
-                    <div>
-                            <i class="fa fa-fire-extinguisher fa-5x faa-vertical animated c-main "></i>
-                            <h4 >Mision de CharyCris </h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            
-                    </div>
-                    <div>
-                            <i class="fa fa-coffee fa-5x faa-ring animated c-main "></i>
-                            <h4>Vision de CharyCris </h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            
-                    </div>
-                   
-                    <div>
-    <i class="fa fa-gavel fa-5x faa-shake animated c-main "></i>
-    <h4>Contactanos y visita la informacion de nuestros desarrolladores </h4>
-    <div class="btn-group btn-group-justified">
-        <a href="../Ventanas/contactoo.html" class="btn mr-2">Visitar  Redes</a>
-        <a href="../Ventanas/desarrolladores.php" class="btn mr-2">Desarrolladores</a>
-    </div>
+	<!--   Tarjetas-->
+<div class="title-cards">
+		<h2>Conoce mas sobre nosotros</h2>
+	</div>
+<div class="container-card">
+	
+<div class="card">
+	<figure>
+		<img src="../media/Msionvision.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Mision y Vision</h3>
+		<p>Mison <br>Nuestra mision es elaborar un producto que no haga daño a tu salud sin la utilizacion de quimicos ni conservantes <br>Mision <br> Nuestra Vision es creceer a nivel nacionat como internacional brindando lo mejor </p>
+		
+	</div>
 </div>
-
-                </div>
-                  </div>
-            
-          
-        </div>
-    </section>
+<div class="card">
+	<figure>
+	<img src="../media/redes.jpeg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Nuestras redes </h3>
+		<p>Vista las redes sociales de CharyCris a travez del siguiente boton danos tu opinion comentando algo positivo </p>
+		<a href="../Ventanas/contactoo.php">Visitar Redes</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="../media/desarrolladores.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Nuestros desarrolladores</h3>
+		<p>Para nosotros es importante que conozcas a los chicos que diseñaron este sitio web es por eso que a traves del siguiente boton vas a poder conocerlos y comunicarte con ellos </p>
+		<a href="../Ventanas/desarrolladores.php">Ver desarrolladores</a>
+	</div>
+</div>
+</div>
+<!--Fin   Tarjetas-->
 </body>
 </html>

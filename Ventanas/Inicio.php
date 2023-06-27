@@ -1,63 +1,52 @@
 
 <?php include("../Template/cabecera.php"); ?>
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="/Style/style_inicio.css">
-
-<!-- <section id="hero"> -->
-        <!-- <h1>Productos en base al cacao <br>Adquierelos ya</h1>
-        <div class="btn">
-        <button><a href="../Ventanas/login.php">Ingresar</a></button>
-        <button><a href="../Ventanas/registro.php">Registrarse</a></button>
-        </div> -->
-        <section id="servicios" class="servicios">
-        <div class="fila">
-            <div class="col">
-                <div class="card">
-                    <div class="icono color1">
-                        <div class="circulo">
-                        <i class="fa-solid fa-user"></i>
-                        </div>
-                    </div>
-                    <h3>Iniciar Sesion</h3>
-                    <p>Iniciar Sesion con tu cuenta en CharyCris para poder acceder a hacer pedidos de los productos que ofrecemos</p>
-
-                    <a href="../Ventanas/login.php">Continuar</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color2">
-                        <div class="circulo">
-                        <i class="fa-solid fa-user-plus"></i>
-                        </div>
-                    </div>
-                    <h3>Registrarse</h3>
-                    <p>Crea tu cuenta en CharyCris donde podras llevar a cabo compras de manera segura </p>
-
-                    <a href="../Ventanas/registro.php">Ir a Registrarme</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color3">
-                        <div class="circulo">
-                        <i class="fa-sharp fa-solid fa-shop"></i>
-                        </div>
-                    </div>
-                    <h3>Ver Productos</h3>
-                    <p>Accede a Nuestro apartado de productos donde veras lo que tenemos para ofrecer </p>
-
-                    <a href="../Ventanas/productos.php">Visitar Productos</a>
-                </div>
-            </div>
-        </div>
-        </section>
-   
- <!-- </section>
-  -->
-
-
-
-     
+<?php include("../Template/btnWhat.php"); ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Cards - Tarjetas con efecto Hover</title>
+	<link rel="stylesheet" href="../Style/style_inicio.css">
+</head>
+<body>
+	<!--   Tarjetas-->
+<div class="title-cards">
+		<h2>"Cuidamos tu salud"</h2>
+	</div>
+<div class="container-card">
+	
+<div class="card">
+	<figure>
+		<img src="../media/tiendalo.jpeg">
+	</figure>
+	<div class="contenido-card">
+		<h3>Visitar Productos </h3>
+		<p>En esta seccion podras visualizar los productos que tenemos para ofrecer y poder comprar para hacer la compra deberas tener tu usuario</p>
+		<a href="../Ventanas/productos.php">Productos</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="../media/iniciar.jpg!d">
+	</figure>
+	<div class="contenido-card">
+		<h3>Iniciar Sesion</h3>
+		<p>Inicia sesion con nosotros de esta manera tendras acceso a compras para esto deberas tener tu usuario registrado</p><br>
+		<a href="../Ventanas/login.php">Iniciar Sesion</a>
+	</div>
+</div>
+<div class="card">
+	<figure>
+		<img src="../media/crearte.png">
+	</figure>
+	<div class="contenido-card">
+		<h3>Registrarse</h3>
+		<p>Crea tu usario para acceder a todo lo que tenemos para ti para esto solo da click en registrarte</p><br>
+		<a href="../Ventanas/registro.php">Registrarse</a>
+	</div>
+</div>
+</div>
+<!--Fin   Tarjetas-->
+</body>
+</html>

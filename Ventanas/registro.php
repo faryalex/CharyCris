@@ -1,4 +1,5 @@
 <?php include("../Template/cabecera.php"); ?>
+<?php include("../Template/btnWhat.php"); ?>
     <title>Registro</title>
     <link rel="stylesheet" href="../Style/registro.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">

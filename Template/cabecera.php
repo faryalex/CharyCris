@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../index.php">INICIO</a>
+          <a class="nav-link" href="../Ventanas/Inicio.php">INICIO</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../Ventanas/productos.php">PRODUCTOS</a>
@@ -40,7 +40,7 @@
           <a class="nav-link" href="../Ventanas/sobre_nosotros.php">SOBRE NOSOTROS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/contactanos.php">PROMOCIONES</a>
+          <a class="nav-link" href="../Ventanas/contactanos.php">GALERIA</a>
         </li>
       </ul>
 

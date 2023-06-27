@@ -1,4 +1,5 @@
-<?php include("../Template/cabecera.php"); ?>
+
+<?php include("../Template/btnWhat.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

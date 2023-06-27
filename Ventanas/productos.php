@@ -1,4 +1,6 @@
 <?php include("../Template/cabecera.php"); ?>
+<?php include("../Template/btnWhat.php"); ?>
+
 		<title>Tienda</title>
 		<link rel="stylesheet" href="../Style/style_productos.css" />
 	</head>
