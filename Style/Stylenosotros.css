@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.card {
+	position: relative !important; /* Añade esta propiedad para que el valor de z-index se aplique correctamente */
+	z-index: 1 !important; /* Ajusta el valor del z-index de los cards según sea necesario */
+  }
 *{
     margin: 0;
     padding: 0;

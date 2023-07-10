@@ -19,7 +19,7 @@
 
 <nav class="navbar navbar-expand-lg b">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="../index.php">
       <img src="../media/logo.png" alt="Logo" class="logo-img">
     </a>
     
@@ -40,7 +40,7 @@
           <a class="nav-link" href="../Ventanas/sobre_nosotros.php">SOBRE NOSOTROS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/contactanos.php">GALERIA</a>
+          <a class="nav-link" href="../Ventanas/galeria.php">GALERIA</a>
         </li>
       </ul>
 
@@ -57,7 +57,7 @@
             <?php echo $usuario; ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="../Configuraciones/logout.php">Cerrar sesión</a>
+            <a class="dropdown-item" href="../Configuraciones/logout.php">CERRAR SESION</a>
           </div>
         </li>
       </ul>
@@ -68,10 +68,10 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/login.php">Iniciar sesión</a>
+          <a class="nav-link" href="../Ventanas/login.php">INICIAR SESION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/registro.php">Registrarse</a>
+          <a class="nav-link" href="../Ventanas/registro.php">REGISTRARSE</a>
         </li>
       </ul>
 

@@ -1,10 +1,11 @@
 <?php
+include_once('./conexion_bd.php');
 // Obtener los datos enviados por el formulario
 $usuario = $_POST["usuario"];
 $contrasena = $_POST["contrasena"];
 
 // Conectar a la base de datos
-$conexion=mysqli_connect("localhost","root","","bddcharycris");
+
 
 // Realizar la consulta SQL
 $sql = "SELECT * FROM usuario WHERE user = '$usuario'";

@@ -46,15 +46,15 @@
                         <section id="inicio" class="inicio">
                             <div class="contenido-banner">
                                 <div class="contenedor-img">
-                                    <img src="" alt="">
+                                    <img src="../img/mauro.jpg" alt="">
                                 </div>
                                 <h1>MAURO FARINANGO</h1>
-                                <h2>Tecnologo de Software - 23 años</h2>
+                                <h2>Tecnologo de Software - 26 años</h2>
                                 <div class="redes">
                                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/0998734675"><i class="fa-brands fa-whatsapp"></i></a>
                                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                                 </div>
                             </div>

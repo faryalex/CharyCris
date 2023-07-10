@@ -55,8 +55,10 @@ if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['user'])
 
   if($stmt->execute()) {
     echo "<script>alert('REGISTRO EXITOSO');</script>"; 
-  } else {
+    echo "<script>window.location.href = '../Ventanas/login.php';</script>";
+} else {
     echo "Error al registrar usuario: " . $stmt->error;
+    
   }
 
   $stmt->close();

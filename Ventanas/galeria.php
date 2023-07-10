@@ -7,15 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
-    <link rel="stylesheet" href="../Style/contactoo.css">
+    <link rel="stylesheet" href="../Style/galeria.css">
 </head>
 <body>
-    <div class="ful-img" id="fulImgBox">
-        <img src="imgs/1.jpg" id="fulImg" alt="">
-        <span onclick="closeImg()">X</span>
-    </div>
 
-    <h1><span>CHARYCRIS</span></h1>
+
+    <h1>CHARYCRIS</h1>
 
     <div class="img-gallery">
         <img src="../imgportafolio/cacao.jpeg" onclick="openFulImg(this.src)" alt="">

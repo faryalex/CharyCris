@@ -21,10 +21,11 @@
 	</figure>
 	<div class="contenido-card">
 		<h3>Mision y Vision</h3>
-		<p>Mison <br>Nuestra mision es elaborar un producto que no haga daño a tu salud sin la utilizacion de quimicos ni conservantes <br>Mision <br> Nuestra Vision es creceer a nivel nacionat como internacional brindando lo mejor </p>
-		
+		<p>Mision <br>Nuestra misión es elaborar un producto que no haga daño a tu salud sin la utilización de químicos ni conservantes.</p>
+		<p>Vision <br>Nuestra visión es crecer a nivel nacional e internacional brindando lo mejor.</p>
 	</div>
 </div>
+
 <div class="card">
 	<figure>
 	<img src="../media/redes.jpeg">
@@ -32,7 +33,7 @@
 	<div class="contenido-card">
 		<h3>Nuestras redes </h3>
 		<p>Vista las redes sociales de CharyCris a travez del siguiente boton danos tu opinion comentando algo positivo </p>
-		<a href="../Ventanas/contactoo.php">Visitar Redes</a>
+		<a href="../Ventanas/VisitarRedes.php">Visitar Redes</a>
 	</div>
 </div>
 <div class="card">
