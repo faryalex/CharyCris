@@ -21,7 +21,7 @@
         <input class="form-control" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
       </div>
       <button type="submit" class="btn btn-primary">Ingresar</button>
-      <p><a href="../Configuraciones/recuperarpass.php">¿Olvidastes tu Contraseña?</a></p>
+      <p><a href="recuperarpass.php">¿Olvidastes tu Contraseña?</a></p>
       <p><a href="./registro.php">¿No tienes una cuenta? Registrate</a></p>
       <div id="mensaje"></div>
     </form>

@@ -15,9 +15,10 @@ if (isset($_SESSION['usuario'])) {
 
 // Obtener la información del usuario desde la base de datos
 $servername = "localhost";
-$username = "id19074660_localhost";
+$username = "id19074660_bddcharycris";
 $password = "Asdaspro2018@";
 $dbname = "id19074660_bddcharycris";
+
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
