@@ -1,8 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; /* Cambiado a "auto" en lugar de "1fr" */
-  gap: 0;
+  grid-template-rows: auto;
 }
 
 .leftside {
@@ -69,12 +68,10 @@
 .inicio .contenido-banner .redes a:hover {
   background-color: #1cb698;
 }
-
-/* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto; /* Agregado */
+    grid-template-rows: auto;
   }
 
   .inicio .contenido-banner {

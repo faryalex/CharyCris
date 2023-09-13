@@ -2,25 +2,25 @@
   margin-top: 40px;}
 
 .teachers-thumbnail img {
-  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
-  margin-bottom: 15px; /* Agrega un margen inferior de 15px para separar las imágenes */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-/* Estilo personalizado para los textos de los profesores */
 .teachers-info {
-  text-align: center; /* Centra el texto en el contenedor */
+  text-align: center;
 }
-/* Estilos para el contenedor del carrusel */
 
-/* Estilos para cada elemento del carrusel */
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .item {
-  text-align: center; /* Centrar el contenido dentro de cada elemento */
-  width: 100%; /* Ocupar todo el ancho del carrusel */
+  text-align: center;
 }
 
-.carousel-image {
-  max-width: 50%; /* Establece el tamaño máximo del ancho al 80% del contenedor */
-  max-height: 300px; /* Establece la altura máxima */
-  margin: 0 auto; /* Centrar horizontalmente la imagen */
+.owl-carousel .item img {
+  width: 50%;
+  height: 50%;
 }

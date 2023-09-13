@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                 <h3>Misión</h3>
-                <p>"Nuestra misión es deleitar a nuestros clientes con chocolates de la más alta
+                <p style="text-align: justify;">"Nuestra misión es deleitar a nuestros clientes con chocolates de la más alta
                     calidad, elaborados exclusivamente a partir de cacao natural e ingredientes puros. Nos comprometemos
                     a ofrecer un producto que respete la salud y el bienestar de nuestros consumidores, promoviendo al
                     mismo tiempo prácticas sostenibles en la cadena de suministro del cacao. Trabajamos incansablemente
@@ -30,7 +30,7 @@
             </div>
             <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
                 <h3>Visión</h3>
-                <p>"Nuestra visión es convertirnos en líderes reconocidos en la industria del chocolate a base de cacao
+                <p style="text-align: justify;">"Nuestra visión es convertirnos en líderes reconocidos en la industria del chocolate a base de cacao
                     natural, estableciendo un estándar de excelencia en calidad, sabor y sostenibilidad. Queremos compartir la riqueza y la
                     autenticidad de nuestros productos con consumidores de todas las culturas. Nos esforzamos por ser
                     una empresa que marque la diferencia, promoviendo prácticas responsables y éticas en toda nuestra
@@ -111,7 +111,6 @@
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplayHoverPause: true,
         });
     });
 </script>

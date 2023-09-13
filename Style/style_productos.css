@@ -1,19 +1,21 @@
-/* Estilos comunes */
-
 
 .btn-add-cart {
-    border-radius: 25px !important;
-    border: none !important;
     padding: 15px 60px !important;
-    color: #fff !important;
-    background-color: #000 !important;
-    cursor: pointer !important;
+    background-color: #282a28 !important;
+    color: #fcf5f5;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
 }
+.btn-add-cart:hover {
+    background-color: #127644 !important;
+  }
 img {
     max-width: 100%;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -117,7 +119,6 @@ header {
     display: none;
 }
 
-/* Main */
 .container-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -157,7 +158,7 @@ header {
     background: none;
 }
 
-/* Responsive para pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .container-items {
         grid-template-columns: repeat(2, 1fr);
@@ -171,18 +172,16 @@ header {
         padding: 15px;
     }
 }
-/* Estilos para el botón */
+
 .btn_pagar {
-    background-color: #198315; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno (ajusta según tu preferencia) */
-    border: none; /* Quita los bordes */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
-    transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
-  }
-  
-  /* Cambia el color de fondo al pasar el mouse por encima */
+    background-color: #198315;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
   .btn_pagar:hover {
-    background-color: #022911; /* Nuevo color de fondo al pasar el mouse */
+    background-color: #022911;
   }

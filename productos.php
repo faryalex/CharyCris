@@ -10,7 +10,7 @@
 
 			<div class="container-icon">
 				<div class="container-cart-icon">
-				<img src="ImgCharyCris/redes/carrito.png" alt="Nuevo Icono">
+				<img src="ImgCharyCris/redes/carrito.png" alt="Carrito de Compras">
 				<div class="count-products">
 					<span id="contador-productos">0</span>
 				</div>

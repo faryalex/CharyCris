@@ -19,7 +19,7 @@
 <body>
     <section class="hero-area">
         <div class="hero-slides owl-carousel">
-            <div class="single-hero-slide bg-img" style="background-image: url(img/descascarillado.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(ImgCharyCris/cacao2.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -63,7 +63,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Envío Seguro:</h4>
-                            <p>Enviamos tus chocolates con cuidado y garantizamos que lleguen en perfectas condiciones.
+                            <p style="text-align: justify;">Enviamos tus chocolates con cuidado y garantizamos que lleguen en perfectas condiciones.
                             </p>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Garantía de Calidad:</h4>
-                            <p>Comprometidos con la excelencia, solo ofrecemos los mejores chocolates de calidad
+                            <p style="text-align: justify;">Comprometidos con la excelencia, solo ofrecemos los mejores chocolates de calidad
                                 premium.</p>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Tiempo de Entrega:</h4>
-                            <p>Te entregamos tus chocolates a tiempo para que disfrutes de su frescura.</p>
+                            <p style="text-align: justify;">Te entregamos tus chocolates a tiempo para que disfrutes de su frescura.</p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Envios a nivel Nacional: </h4>
-                            <p>Realizamos entregas a nivel nacional por medio de Servientrega.
+                            <p style="text-align: justify;">Realizamos entregas a nivel nacional por medio de Servientrega.
                             </p>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Atención al Cliente:</h4>
-                            <p>Estamos al teléfono, email, whatsapp, siempre que lo necesites, de lunes a Viernes,
+                            <p style="text-align: justify;">Estamos al teléfono, email, whatsapp, siempre que lo necesites, de lunes a Viernes,
                                 podemos ayudarte de 9:00 a 17:00</p>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Redes Sociales: </h4>
-                            <p>Síguenos en redes sociales y mantente al día con nuestras últimas novedades y ofertas.
+                            <p style="text-align: justify;">Síguenos en redes sociales y mantente al día con nuestras últimas novedades y ofertas.
                             </p>
                         </div>
                     </div>
