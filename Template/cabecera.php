@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title> 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Style/stylecabecera.css">
+    <link rel="stylesheet" href="./Style/stylecabecera.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
@@ -19,8 +19,8 @@
 
 <nav class="navbar navbar-expand-lg b">
   <div class="container">
-    <a class="navbar-brand" href="../index.php">
-      <img src="../media/logo.png" alt="Logo" class="logo-img">
+    <a class="navbar-brand" href="./index.php">
+      <img src="./media/logo.png" alt="Logo" class="logo-img">
     </a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +31,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/Inicio.php">INICIO</a>
+          <a class="nav-link" href="./productos.php">PRODUCTOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/productos.php">PRODUCTOS</a>
+          <a class="nav-link" href="./sobre_nosotros.php">SOBRE NOSOTROS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/sobre_nosotros.php">SOBRE NOSOTROS</a>
+          <a class="nav-link" href="./galeria.php">GALERIA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/galeria.php">GALERIA</a>
+          <a class="nav-link" href="./contactanos.php">Contactanos</a>
         </li>
       </ul>
 
@@ -57,7 +57,7 @@
             <?php echo $usuario; ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="../Configuraciones/logout.php">CERRAR SESION</a>
+            <a class="dropdown-item" href="./Configuraciones/logout.php">CERRAR SESION</a>
           </div>
         </li>
       </ul>
@@ -68,10 +68,10 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/login.php">INICIAR SESION</a>
+          <a class="nav-link" href="./login.php">INICIAR SESION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Ventanas/registro.php">REGISTRARSE</a>
+          <a class="nav-link" href="./registro.php">REGISTRARSE</a>
         </li>
       </ul>
 

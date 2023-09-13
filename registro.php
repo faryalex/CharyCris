@@ -1,11 +1,10 @@
-<?php include("../Template/cabecera.php"); ?>
-<?php include("../Template/btnWhat.php"); ?>
+<?php include("./Template/cabecera.php"); ?>
     <title>Registro</title>
-    <link rel="stylesheet" href="../Style/registro.css">
+    <link rel="stylesheet" href="./Style/registro.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-<form method="post" action="../Configuraciones/autenticarregistro.php" class="form-register">
+<form method="post" action="./Configuraciones/autenticarregistro.php" class="form-register">
   
 
   <div class="container d-flex justify-content-center">
@@ -42,6 +41,6 @@
   
 </form>
 
-<script type="module" src="../js/autenticar.js"></script>
+<script type="module" src="./js/autenticar.js"></script>
 </body>
 </html>

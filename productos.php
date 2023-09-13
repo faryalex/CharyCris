@@ -1,8 +1,8 @@
-<?php include("../Template/cabecera.php"); ?>
-<?php include("../Template/btnWhat.php"); ?>
+<?php include("./Template/cabecera.php"); ?>
+<?php include("./Template/btnWhat.php"); ?>
 
 		<title>Tienda</title>
-		<link rel="stylesheet" href="../Style/style_productos.css" />
+		<link rel="stylesheet" href="./Style/style_productos.css" />
 	</head>
 	<body>
 		<header>
@@ -67,7 +67,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/vasogela.png"
+						src="./media/vasogela.png"
 						alt="producto"
 					/>
 				</figure>
@@ -80,7 +80,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/vaso1.png"
+						src="./media/vaso1.png"
 						alt="producto"
 					/>
 				</figure>
@@ -93,7 +93,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/tarrina.png"
+						src="./media/tarrina.png"
 						alt="producto"
 					/>
 				</figure>
@@ -106,7 +106,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/sasasasasasasa.png"
+						src="./media/sasasasasasasa.png"
 						alt="producto"
 					/>
 				</figure>
@@ -119,7 +119,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/chcocodulce.png"
+						src="./media/chcocodulce.png"
 						alt="producto"
 					/>
 				</figure>
@@ -132,7 +132,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/chcocoforma.png"
+						src="./media/chcocoforma.png"
 						alt="producto"
 					/>
 				</figure>
@@ -145,7 +145,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/chcocolateenforma.png"
+						src="./media/chcocolateenforma.png"
 						alt="producto"
 					/>
 				</figure>
@@ -158,7 +158,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/chcoco.png"
+						src="./media/chcoco.png"
 						alt="producto"
 					/>
 				</figure>
@@ -171,7 +171,7 @@
 			<div class="item">
 				<figure>
 					<img
-						src="../media/chcocopol.png"
+						src="./media/chcocopol.png"
 						alt="producto"
 					/>
 				</figure>
@@ -184,7 +184,7 @@
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="module" src="../js/productos.js"></script>
+        <script type="module" src="./js/productos.js"></script>
 		
 		
 

@@ -1,83 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-.card {
-	position: relative !important; /* Añade esta propiedad para que el valor de z-index se aplique correctamente */
-	z-index: 1 !important; /* Ajusta el valor del z-index de los cards según sea necesario */
-  }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+.contNosotros{
+  margin-top: 40px;}
+
+.teachers-thumbnail img {
+  max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+  margin-bottom: 15px; /* Agrega un margen inferior de 15px para separar las imágenes */
 }
-/*Cards*/
-.container-card{
-	width: 100%;
-	display: flex;
-	max-width: 1100px;
-	margin: auto;
+
+/* Estilo personalizado para los textos de los profesores */
+.teachers-info {
+  text-align: center; /* Centra el texto en el contenedor */
 }
-.title-cards{
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	padding: 20px;
-	margin-top: 20px;
-	text-align: center;
-	color: #7a7a7a;
+/* Estilos para el contenedor del carrusel */
+
+/* Estilos para cada elemento del carrusel */
+.item {
+  text-align: center; /* Centrar el contenido dentro de cada elemento */
+  width: 100%; /* Ocupar todo el ancho del carrusel */
 }
-.card{
-	width: 100%;
-	margin: 20px;
-	border-radius: 6px;
-	overflow: hidden;
-	background:#fff;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
+
+.carousel-image {
+  max-width: 50%; /* Establece el tamaño máximo del ancho al 80% del contenedor */
+  max-height: 300px; /* Establece la altura máxima */
+  margin: 0 auto; /* Centrar horizontalmente la imagen */
 }
-.card:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
-}
-.card img{
-	width: 100%;
-	height: 210px;
-}
-.card .contenido-card{
-	padding: 15px;
-	text-align: center;
-}
-.card .contenido-card h3{
-	margin-bottom: 15px;
-	color: #7a7a7a;
-}
-.card .contenido-card p{
-	line-height: 1.8;
-	color: #6a6a6a;
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-.card .contenido-card a{
-	display: inline-block;
-	padding: 10px;
-	margin-top: 10px;
-	text-decoration: none;
-	color: #2fb4cc;
-	border: 1px solid #2fb4cc;
-	border-radius: 4px;
-	transition: all 400ms ease;
-	margin-bottom: 5px;
-}
-.card .contenido-card a:hover{
-	background: #2fb4cc;
-	color: #fff;
-}
-@media only screen and (min-width:320px) and (max-width:768px){
-	.container-card{
-		flex-wrap: wrap;
-	}
-	.card{
-		margin: 15px;
-	}
-}
-/*Fin-Cards*/

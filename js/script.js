@@ -1,10 +1,16 @@
-const fulImgBox = document.getElementById("fulImgBox"),
-fulImg = document.getElementById("fulImg");
+document.addEventListener("DOMContentLoaded", function () {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
 
-function openFulImg(reference){
-    fulImgBox.style.display = "flex";
-    fulImg.src = reference
-}
-function closeImg(){
-    fulImgBox.style.display = "none";
-}
+    function showSlide(n) {
+        slides[currentSlide].style.display = "none";
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].style.display = "block";
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 3000); // Cambiar la imagen cada 3 segundos (3000 ms)
+});

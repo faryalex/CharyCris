@@ -1,62 +1,54 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-h1 {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 5vh; /* Centra el texto verticalmente utilizando la mitad de la altura de la ventana */
-    transform: translateY(-50%); /* Ajusta la posición vertical del texto */
+.hero-wrap {
+    background-image: url('ImgCharyCris/cacao1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 24px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+.hero-wrap h1 {
+    opacity: 1;
+    animation: fadeIn 3s ease-in-out;
+    font-size: 3.5rem;
+    color: #ece9e4;
+    font-family: Arial, sans-serif;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
+.ftco-section {
+    margin-top: 40px; /* Puedes ajustar el valor según la separación deseada */
+}
+.imagen-galeria {
+    width: 200px;
+    height: 200px; /* Esto mantiene la proporción original de la imagen */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+/* Estilos para centrar verticalmente las entradas del blog */
+.blog-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar horizontalmente el texto */
+}
+/* Estilos para las imágenes */
 
-body{
-    background-color: #ecf4fb;
+
+/* Estilos para las imágenes cuando el mouse pasa por encima */
+.imagen-galeria:hover {
+    transform: scale(1.5); /* Agranda la imagen al 110% del tamaño original */
 }
 
-.img-gallery{
-    width: 80%;
-    margin: 50px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-    gap: 30px;
-}
-.img-gallery img{
-    width: 100%;
-    cursor: pointer;
-    transition: 1s;
-}
-.img-gallery img:hover{
-    transform: scale(1.2);
-}
-.ful-img{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0,0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-}
-.ful-img span{
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-.ful-img img{
-    width: 90%;
-    max-width: 600px;
-}
