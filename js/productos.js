@@ -130,7 +130,7 @@ btn_pagar.addEventListener('click', (e) => {
   console.log("hola desdejs");
  
     $.ajax({
-      url: '../Configuraciones/verificar-sesion.php',
+      url: 'Configuraciones/verificar-sesion.php',
       success: function(response) {
         if (response == 'ok') {
           // Si la sesión está iniciada, realizar la acción deseada
@@ -142,7 +142,7 @@ btn_pagar.addEventListener('click', (e) => {
               let jsonData = JSON.stringify(allProducts);
   
               // Enviar la solicitud POST al archivo PHP
-              fetch('../Ventanas/enviar.php', {
+              fetch('./enviar.php', {
                 method: 'POST',
                 body: jsonData
               })
@@ -162,14 +162,14 @@ btn_pagar.addEventListener('click', (e) => {
           } else {
             // El usuario ha hecho clic en "Cancelar"
             // Coloca aquí el código que deseas ejecutar cuando el usuario haya hecho clic en "Cancelar"
-            window.location.href = "../Ventanas/productos.php";
+            window.location.href = "./productos.php";
           }
           alert('Pedido realizado con exito, en unos instantes un asesor se comunicara contigo');
-          window.location.href = "../Ventanas/productos.php";
+          window.location.href = "./productos.php";
         } else {
           // Si la sesión no está iniciada, mostrar un mensaje de error
           alert('Debes iniciar sesión antes de realizar el pedido.');
-          window.location.href = "../Ventanas/login.php";
+          window.location.href = "./login.php";
         }
       }
     });

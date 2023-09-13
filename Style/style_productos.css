@@ -1,4 +1,6 @@
 /* Estilos comunes */
+
+
 .btn-add-cart {
     border-radius: 25px !important;
     border: none !important;
@@ -7,17 +9,6 @@
     background-color: #000 !important;
     cursor: pointer !important;
 }
-
-.icon-cart {
-    width: 5vw;
-    height: 5vw;
-    stroke: #000;
-}
-
-.icon-cart:hover {
-    cursor: pointer;
-}
-
 img {
     max-width: 100%;
 }
@@ -37,12 +28,12 @@ header {
 
 .count-products {
     position: absolute;
-    top: 55%;
+    top: 40%;
     right: 0;
-    background-color: #000;
-    color: #fff;
-    width: 25px;
-    height: 25px;
+    background-color: #06b31d;
+    color: #070707;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,3 +171,18 @@ header {
         padding: 15px;
     }
 }
+/* Estilos para el botón */
+.btn_pagar {
+    background-color: #198315; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno (ajusta según tu preferencia) */
+    border: none; /* Quita los bordes */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
+  }
+  
+  /* Cambia el color de fondo al pasar el mouse por encima */
+  .btn_pagar:hover {
+    background-color: #022911; /* Nuevo color de fondo al pasar el mouse */
+  }

@@ -1,7 +1,7 @@
 <?php include("./Template/cabecera.php"); ?>
     <title>Registro</title>
-    <link rel="stylesheet" href="./Style/registro.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/login.css" />
 </head>
 <body>
 <form method="post" action="./Configuraciones/autenticarregistro.php" class="form-register">

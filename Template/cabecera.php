@@ -40,7 +40,7 @@
           <a class="nav-link" href="./galeria.php">GALERIA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./contactanos.php">Contactanos</a>
+          <a class="nav-link" href="./contactanos.php">CONTACTANOS</a>
         </li>
       </ul>
 

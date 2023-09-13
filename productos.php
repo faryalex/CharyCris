@@ -10,20 +10,7 @@
 
 			<div class="container-icon">
 				<div class="container-cart-icon">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"	
-					class="icon-cart"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-					/>
-				</svg>
+				<img src="ImgCharyCris/redes/carrito.png" alt="Nuevo Icono">
 				<div class="count-products">
 					<span id="contador-productos">0</span>
 				</div>
@@ -34,8 +21,8 @@
 					<div class="cart-product">
 						<div class="info-cart-product">
                             <span class="cantidad-producto-carrito">1</span>
-                            <p class="titulo-producto-carrito">Chocolate</p>
-                            <span class="precio-producto-carrito">$1</span>
+                            <p class="titulo-producto-carrito">Vacio</p>
+                            <span class="precio-producto-carrito">$0</span>
                         </div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +42,7 @@
 				</div>
                     <div class="cart-total">
                         <h3>Total:</h3>
-                        <span class="total-pagar">$200</span>
+                        <span class="total-pagar">$0</span>
 						<button id="btn-realizar-pedido" class="btn_pagar" data-check-login>Realizar Pedido</button>
                     </div>
 					
@@ -138,7 +125,7 @@
 				</figure>
 				<div class="info-product">
 					<h2>caja de chcocolates en forma</h2>
-					<p class="price">$1.50</p>
+					<p class="price">$1.50</p><link rel="stylesheet" href="./Style/login.css" />
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
@@ -185,8 +172,5 @@
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="module" src="./js/productos.js"></script>
-		
-		
-
 	</body>
 </html>

@@ -1,0 +1,8 @@
+.btn-primary {
+    background-color: #28a745 !important; /* Puedes cambiar el color hexadecimal al que desees */
+  }
+  .btn-primary:hover {
+    background-color: #023306 !important; /* Cambia el color hexadecimal al que desees */
+  }
+  
+  
