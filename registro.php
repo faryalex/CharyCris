@@ -2,7 +2,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Style/login.css" />
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <body>
 <form method="post" action="./Configuraciones/autenticarregistro.php" class="form-register">
   
@@ -42,5 +42,7 @@
 </form>
 
 <script type="module" src="./js/autenticar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

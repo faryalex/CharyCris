@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10">
                 <h1 class="text-center">Recuperar/ Cambiar Contraseña</h1>
-                <form method="post" action="../Configuraciones/envia_codigo.php">
+                <form id="recuperarpass" method="post" action="../Configuraciones/envia_codigo.php">
                     <div class="form-group">
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" class="form-control" required>
@@ -23,6 +23,8 @@
             </div>
         </div>
     </div>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

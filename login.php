@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-<form method="post" action="./Configuraciones/autenticar.php">
+<form id="login-form" method="post" action="Configuraciones/autenticar.php">
     
 <div class="container d-flex justify-content-center">
   <section class="form-login">
@@ -28,5 +28,7 @@
 </div>
 
 </form>
+<script src="js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

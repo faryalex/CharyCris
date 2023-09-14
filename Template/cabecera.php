@@ -57,7 +57,7 @@
             <?php echo $usuario; ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="./Configuraciones/logout.php">CERRAR SESION</a>
+            <a class="dropdown-item" href="./Configuraciones/logout.php">CERRAR SESIÓN</a>
           </div>
         </li>
       </ul>
@@ -68,7 +68,7 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="./login.php">INICIAR SESION</a>
+          <a class="nav-link" href="./login.php">INICIAR SESIÓN</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./registro.php">REGISTRARSE</a>

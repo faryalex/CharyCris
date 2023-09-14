@@ -4,36 +4,41 @@ include_once('./conexion_bd.php');
 $usuario = $_POST["usuario"];
 $contrasena = $_POST["contrasena"];
 
-//
+$response = array();
 
+if ($stmt = $conexion->prepare("SELECT * FROM usuario WHERE user = ?")) {
+    $stmt->bind_param("s", $usuario);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
 
-$sql = "SELECT * FROM usuario WHERE user = '$usuario'";
-$resultado = mysqli_query($conexion, $sql);
+    if (mysqli_num_rows($resultado) == 1) {
+        $fila = mysqli_fetch_assoc($resultado);
 
-// Verific
-if (mysqli_num_rows($resultado) == 1) {
-    $fila = mysqli_fetch_assoc($resultado);
-
-    // Verificar 
-    if ($verify = password_verify($contrasena, $fila["pass"])) {
-        // Iniciar sesión y redirigir al u
-        session_start();
-        $_SESSION["usuario"] = $usuario;
-        header("Location: ../Ventanas/productos.php");
-
+        if (password_verify($contrasena, $fila["pass"])) {
+            // Inicio de sesión exitoso
+            session_start();
+            $_SESSION["usuario"] = $usuario;
+            $response['success'] = true;
+        } else {
+            // Contraseña incorrecta
+            $response['success'] = false;
+            $response['error'] = "Contraseña incorrecta";
+        }
     } else {
-
-        echo "<script>alert('Contraseña incorrecta');</script>";
-        echo "<script>window.history.back();</script>";
+        // Usuario no encontrado
+        $response['success'] = false;
+        $response['error'] = "Usuario no existe";
     }
 
+    mysqli_close($conexion);
 } else {
-
-    echo "<script>alert('Usuario no existe');</script>";
-    echo "<script>window.history.back();</script>";
-
+    // Error en la consulta SQL
+    $response['success'] = false;
+    $response['error'] = "Error en la consulta SQL";
 }
 
-mysqli_close($conexion);
+header('Content-Type: application/json');
+echo json_encode($response);
+
 
 ?>
