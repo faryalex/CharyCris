@@ -39,7 +39,7 @@ if (isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['user']
       $response['error'] = "Teléfono se encuentra registrado";
     } else {
       // No hay duplicados, procede con la inserción
-      $stmt = $conexion->prepare("INSERT INTO usuario (nombre, apellido, user, pass, email, telefono) VALUES (?, ?, ?, ?, ?, ?)");
+      $stmt = $conexion->prepare("INSERT INTO usuario (nombre, apellido, user, pass, email,codigo_verificacion, telefono) VALUES (?, ?, ?, ?, ?, '000000', ?)");
       $stmt->bind_param("ssssss", $nombre, $apellido, $user, $password, $correo, $telefono);
 
       if ($stmt->execute()) {

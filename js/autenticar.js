@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else  {
           Swal.fire({
-            title: 'El nombre de usuario,correo,telefono ya han sidio registrados.',
+            title: 'Error',
             text: data.error,
             icon: 'error',
             confirmButtonText: 'Cerrar',

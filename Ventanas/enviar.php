@@ -19,7 +19,6 @@ $username = "id19074660_bddcharycris";
 $password = "Asdaspro2018@";
 $dbname = "id19074660_bddcharycris";
 
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -54,6 +53,7 @@ $headers = 'From: remitente@ejemplo.com' . "\r\n" .
 mail($to, $subject, $mensaje, $headers);
 
 // Enviar una respuesta JSON al cliente
+header('Content-Type: application/json');
 $response = array('status' => 'ok');
 echo json_encode($response);
 ?>

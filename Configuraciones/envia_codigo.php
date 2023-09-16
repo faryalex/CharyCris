@@ -61,7 +61,7 @@ mail($to, $subject, $mensaje, $headers);
                     </div>
                     <div class="text-center mt-3"> <!-- Agregamos la clase 'mt-3' para dar espacio en la parte superior -->
                         <button type="submit" class="btn btn-primary">Verificar</button>
-                        <a href="../Ventanas/login.php" class="btn btn-primary">Regresar</a>
+                        <a href="../login.php" class="btn btn-primary">Regresar</a>
                     </div>
                 </form>
             </div>
