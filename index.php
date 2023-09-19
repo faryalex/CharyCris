@@ -155,9 +155,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>La Finca</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate perspiciatis
-                                accusantium sit incidunt illo unde quam sunt dignissimos similique sed, animi ullam
-                                deleniti eum dicta. Expedita sapiente ratione totam beatae.</p>
+                            <p>La finca es el lugar en donde se produce la planta que nos llena de ilusion para poder complacer tu paladar con nuestro delicioso producto, aqui es donde nace el cacao para la produccion de un esquisisto chcocolate </p>
                         </div>
                     </div>
                 </div>
@@ -169,9 +167,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>Familia</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quam, autem iure delectus
-                                alias similique, molestiae libero eum ullam nihil reiciendis possimus? Quo assumenda
-                                impedit corrupti ut aut nihil aliquam!</p>
+                            <p>Familia simbolo de la lucha de vida y la union por un bien comun aqui nace el ideal de llegar a conquistar sus corazones con el producto fabricado con mucho cariño</p>
 
                         </div>
                     </div>
@@ -184,9 +180,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>Trabajo</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum mollitia dolore, expedita,
-                                et quo qui sed error laboriosam ullam, repellat eligendi voluptatibus ratione excepturi
-                                eum voluptate deleniti vitae totam perferendis!</p>
+                            <p>El trabajo que se hace es organizado los roles son fundamentales para que la produccion de nuestro chocolate sea sana el trabajo es el esfuerzo diario de cada integrante </p>
 
                         </div>
                     </div>
@@ -199,9 +193,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>Fruto del Esfuerzo</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sequi officia quisquam
-                                labore vitae sint et praesentium dolore suscipit, recusandae ea, assumenda maiores
-                                soluta minus qui, eos sunt quod nisi.</p>
+                            <p>Fruto de nuestro esfuerzo esperamos llenar los corazones de cada familia que deguste de nuestro producto esperamos seguir creciendo y llevando nuestra inpiracion en alto</p>
                         </div>
                     </div>
                 </div>
@@ -272,11 +264,11 @@
                                 </div>
                                 <div class="single-contact d-flex mb-30">
                                     <i class="icon-telephone-1"></i>
-                                    <p>Principal: +59398745612 <br>Oficina: +593987524625</p>
+                                    <p>Principal: +593984888280 <br>Oficina: +593999035834</p>
                                 </div>
                                 <div class="single-contact d-flex">
                                     <i class="icon-contract"></i>
-                                    <p>marcelino@outlook.com</p>
+                                    <p>semaferjoado@hotmail.com</p>
                                 </div>
                             </div>
                         </div>

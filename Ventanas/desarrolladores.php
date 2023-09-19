@@ -29,10 +29,10 @@
                 <section id="inicio" class="inicio">
                     <div class="contenido-banner">
                         <div class="contenedor-img">
-                            <img src="../media/pro6.jpeg" alt="">
+                            <img src="../ImgCharyCris/marcelino.jpeg" alt="">
                         </div>
                         <h1>FERNANDO CASTRO</h1>
-                        <h2>Tecnologo de Software - 19 años</h2>
+                        <h2>Desarrollador - 20 años</h2>
                         <div class="redes">
                             <a href="https://www.facebook.com/marcelo.castro.524934" target="_blank"><i
                                     class="fa-brands fa-facebook-f"></i></a>
@@ -57,7 +57,7 @@
                             <img src="../media/mauro.jpg" alt="">
                         </div>
                         <h1>MAURO FARINANGO</h1>
-                        <h2>Tecnologo de Software - 26 años</h2>
+                        <h2>Desarrollador - 26 años</h2>
                         <div class="redes">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href=""><i class="fa-brands fa-discord"></i></a>

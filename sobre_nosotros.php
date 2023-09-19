@@ -58,44 +58,44 @@
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
                     <div class="teachers-thumbnail">
-                        <img src="ImgCharyCris/marcelino.jpeg" alt="">
+                        <img src="ImgCharyCris/InspiracionChar.jpg" alt="">
                     </div>
                     <div class="teachers-info mt-30">
-                        <h5>Marcelino</h5>
-                        <span>Fundador</span>
+                        <h5>Teresa Rosario Salazar Trujillo</h5>
+                        <span>Inspiracion 🎗︎</span>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
                     <div class="teachers-thumbnail">
-                        <img src="ImgCharyCris/marcelino.jpeg" alt="">
+                        <img src="ImgCharyCris/inspiracionCris.jpg" alt="">
                     </div>
                     <div class="teachers-info mt-30">
-                        <h5>Marcelino</h5>
-                        <span>Director</span>
+                        <h5>Cristian Jose Castro Salazar</h5>
+                        <span>Inspiracion 🎗︎</span>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">
                     <div class="teachers-thumbnail">
-                        <img src="ImgCharyCris/marcelino.jpeg" alt="">
+                        <img src="ImgCharyCris//fundador.jpg" alt="">
                     </div>
                     <div class="teachers-info mt-30">
-                        <h5>Marcelino</h5>
-                        <span>Secretario</span>
+                        <h5>Galo Oswaldo Castro Vega</h5>
+                        <span>Fundador</span>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">
                     <div class="teachers-thumbnail">
-                        <img src="ImgCharyCris/marcelino.jpeg" alt="">
+                        <img src="ImgCharyCris//gerente.jpg" alt="">
                     </div>
                     <div class="teachers-info mt-30">
-                        <h5>Marcelino</h5>
-                        <span>Sucesor</span>
+                        <h5>Galo Fernando Castro Salazar</h5>
+                        <span>Gerente</span>
                     </div>
                 </div>
             </div>
