@@ -43,6 +43,9 @@
     <div class="item"><img src="ImgCharyCris/cacao3.jpg" alt="" class=""></div>
     <div class="item"><img src="ImgCharyCris/cacao4.jpg" alt="" class=""></div>
     <div class="item"><img src="ImgCharyCris/cacao5.jpg" alt="" class=""></div>
+    <div class="item"><img src="ImgCharyCris/img1.jpg" alt="" class=""></div>
+    <div class="item"><img src="ImgCharyCris/img0.jpg" alt="" class=""></div>
+    <div class="item"><img src="ImgCharyCris/img2.jpg" alt="" class=""></div>
 </div>
 <section class="teachers-area section-padding-0-100">
     <div class="container">

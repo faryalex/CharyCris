@@ -37,7 +37,7 @@
                             <h5>Facebook</h5>
                             <p>Donde la pasión por el cacao se convierte en deliciosas historias. <br> Únete a nuestra comunidad chocolatera.</p>
                             <img src="ImgCharyCris/redes/face.png">
-                            <a href="#" class="btn academy-btn btn-sm">Visitar</a>
+                            <a href="https://www.facebook.com/charycris.2023?mibextid=ZbWKwL" class="btn academy-btn btn-sm">Visitar</a>
                         </div>
                     
                     </div>
@@ -48,7 +48,7 @@
                             <h5>Youtube</h5>
                             <p>"Sumérgete en un mundo de sabor y descubre la magia del chocolate auténtico. ¡Suscríbete y déjate tentar por nuestro viaje chocolatero!"</p>
                             <img src="ImgCharyCris/redes/youtu.png">
-                            <a href="#" class="btn academy-btn btn-sm">Visitar</a>
+                            <a href="https://youtube.com/@charycris6685?si=cZPY-oxdjg_mGyle" class="btn academy-btn btn-sm">Visitar</a>
                         </div>
                        
                     </div>
@@ -59,7 +59,7 @@
                             <h5>Instagram</h5>
                             <p>"Cada tableta de nuestro chocolate es una obra de arte en sí misma. 🍫❤️ #CharyCriss #ChocolateDeCalidad"</p>
                             <img src="ImgCharyCris/redes/insta.png">
-                            <a href="#" class="btn academy-btn btn-sm">Visitar</a>
+                            <a href="https://instagram.com/charycris2022?igshid=NTc4MTIwNjQ2YQ==" class="btn academy-btn btn-sm">Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                             <h5>TikTok</h5>
                             <p>"Desde granos de cacao hasta deliciosas tabletas: ¡sigue nuestro viaje chocolatero en segundos! #CharyCris"</p>
                             <img src="ImgCharyCris/redes/tiktok.png">
-                            <a href="#" class="btn academy-btn btn-sm">Visitar</a>
+                            <a href="https://www.tiktok.com/@charycris2?_t=8fpHY8fSHCg&_r=1" class="btn academy-btn btn-sm">Visitar</a>
                         </div>
                     </div>
                 </div>

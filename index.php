@@ -219,7 +219,7 @@
             </div>
             <div class="row">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18978.748164987643!2d-78.40937605027257!3d-0.21463879131708685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d591485a2d0477%3A0xc210a38439c7801f!2sParque%20Central%20de%20Tumbaco!5e0!3m2!1ses!2sec!4v1694564558590!5m2!1ses!2sec"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.791078941954!2d-78.4077574250354!3d-0.2117268997861869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTInNDIuMiJTIDc4wrAyNCcxOC43Ilc!5e0!3m2!1ses!2sec!4v1695149230657!5m2!1ses!2sec"
                     width="900" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
 
@@ -245,10 +245,10 @@
                                 </div>
                                 <p>Conéctate con nosotros en nuestras redes sociales y únete a nuestra comunidad</p>
                                 <div class="footer-social-info">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-tiktok"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/charycris.2023?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://youtube.com/@charycris6685?si=cZPY-oxdjg_mGyle"><i class="fa fa-youtube"></i></a>
+                                    <a href="https://www.tiktok.com/@charycris2?_t=8fpHY8fSHCg&_r=1"><i class="fa fa-tiktok"></i></a>
+                                    <a href="https://instagram.com/charycris2022?igshid=NTc4MTIwNjQ2YQ=="><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
