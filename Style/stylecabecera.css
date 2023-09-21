@@ -1,19 +1,17 @@
 .b {
+  height: 150px !important;
   position: relative;
   background-color: rgb(30, 31, 30);
-  margin-left: 0;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0px 0px;
 }
 
-.logo-img {
-  width: 100px;
-  height: 100px;
-  max-height: 80px;
-  object-fit: contain;
+.imgLogo {
+  margin: 0px !important;
+  width: 150px !important;
+  height: 150px !important;
 }
 
 .navbar {
@@ -108,4 +106,9 @@
   width: 100%;
   background-color: #fff;
   z-index: 9999;
+}
+@media (max-width: 768px) {
+  .logo-img {
+    width: 150px !important; /* Cambia el tamaño del logo en dispositivos móviles */
+  }
 }

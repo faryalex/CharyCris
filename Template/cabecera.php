@@ -20,21 +20,21 @@
 <nav class="navbar navbar-expand-lg b">
   <div class="container">
     <a class="navbar-brand" href="./index.php">
-      <img src="./media/logo.png" alt="Logo" class="logo-img">
+      <img src="./media/logo.png" alt="Logo" class="imgLogo">
     </a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i> <!-- Reemplaza con el ícono de FontAwesome que desees -->
+    <i class="fas fa-bars"></i>
     </button>
 
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./productos.php">PRODUCTOS</a>
+      <li class="nav-item">
+          <a class="nav-link" href="./sobre_nosotros.php">SOBRE NOSOTROS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./sobre_nosotros.php">SOBRE NOSOTROS</a>
+          <a class="nav-link" href="./productos.php">PRODUCTOS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./galeria.php">GALERIA</a>

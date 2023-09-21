@@ -12,63 +12,90 @@ let allProducts = []
 const valortotal = document.querySelector('.total-pagar')
 const countProducts = document.querySelector('#contador-productos')
 
-productlist.addEventListener('click', e =>{
-    
-    if(e.target.classList.contains('btn-add-cart')){
-        console.log("holaaa");
-        const product = e.target.parentElement
+productlist.addEventListener('click', e => {
 
-        const infoProduct = {
-            quantity: 1,
-            title: product.querySelector('h2').textContent,
-            price: product.querySelector('p').textContent,
-
-        }
-        const exits = allProducts.some(product => product.title === infoProduct.title)
-        if(exits){
-            const products = allProducts.map(product =>{
-                if(product.title === infoProduct.title){
-                    product.quantity++;
-                    return product;
-                }else{
-                    return product;
+    $.ajax({
+        url: 'Configuraciones/verificar-sesion.php',
+        dataType: 'text',
+        success: function (response) {
+            if (response == 'ok') {
+                
+                if(e.target.classList.contains('btn-add-cart')){
+                    console.log("holaaa boton");
+                    const product = e.target.parentElement
+                  
+                    const infoProduct = {
+                        quantity: 1 ,
+                        title: product.querySelector(' h2').textContent,
+                        price: product.querySelector(' p').textContent,
+            
+                    }
+                    const exits = allProducts.some(product => product.title === infoProduct.title)
+                    if(exits){
+                        const products = allProducts.map(product =>{
+                            if(product.title === infoProduct.title){
+                                product.quantity++;
+                                return product;
+                            }else{
+                                return product;
+                            }
+                        })
+                        allProducts = [...products]
+                    }else{
+            
+                    
+                    allProducts = [...allProducts, infoProduct]
+                    }
+                    showHTML();
                 }
-            })
-            allProducts = [...products]
-        }else{
+            } else {
+                // Si la sesión no está iniciada, mostrar un mensaje de error
+                Swal.fire({
+                    title: '',
+                    text: 'Debes Iniciar Sesion ',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Iniciar Sesion',
+                    cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Aceptar"
+                        window.location.href = "./login.php";
+                    } else if (result.dismiss === Swal.DismissReason.cancel) {
+                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar"
 
-        
-        allProducts = [...allProducts, infoProduct]
+                    }
+                });
+            }
         }
-        showHTML();
-    }
+    })
 })
 rowProduct.addEventListener('click', (e) => {
 
-    
-    if(e.target.classList.contains('icon-close')){
+
+    if (e.target.classList.contains('icon-close')) {
         const product = e.target.parentElement
         const title = product.querySelector('p').textContent
 
         allProducts = allProducts.filter(product => product.title !== title)
     };
     showHTML();
-    
+
 
 });
 
-const showHTML = () =>{
-    rowProduct.innerHTML='';
+const showHTML = () => {
+    rowProduct.innerHTML = '';
     let total = 0;
     let totalOfProducts = 0;
 
-    allProducts.forEach(product =>{
+    allProducts.forEach(product => {
         const containerProduct = document.createElement('div')
         containerProduct.classList.add('cart-product')
 
         containerProduct.innerHTML = ` 
         <div class="info-cart-product">
-                                <span class="cantidad-producto-carrito">${product.quantity}</span>
+                                <span class="cantidad-producto-carrito">${product.quantity}  </span>
                                 <p class="titulo-producto-carrito">${product.title}</p>
                                 <span class="precio-producto-carrito">${product.price}</span>
                             </div>
@@ -93,8 +120,8 @@ const showHTML = () =>{
         totalOfProducts = totalOfProducts + product.quantity;
     });
 
-   valortotal.innerText = `$${total} ` 
-   countProducts.innerText = totalOfProducts; 
+    valortotal.innerText = `$${total} `
+    countProducts.innerText = totalOfProducts;
 
 
 };
@@ -110,8 +137,8 @@ btn_pagar.addEventListener('click', (e) => {
             if (response == 'ok') {
 
                 Swal.fire({
-                    title: '',
-                    text: 'Deseas realizar el pedido?',
+                    title: 'Proceso de Compra.',
+                    text: 'Estimado cliente por el momento no disponemos de un pago en linea, si realiza su pedido ,un asesor se pondra en contacto via Whatsapp para cordinar el pago y entrega del pedido. Deseas realizar el pedido?',
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonText: 'Continuar',

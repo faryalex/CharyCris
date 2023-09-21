@@ -72,7 +72,7 @@
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>vaso de chocolate grande</h2>
+					<h2> vaso de chocolate grande</h2>
 					<p class="price">$1.00</p>
 					<button  class="btn-add-cart">Añadir al carrito</button>
 				</div>

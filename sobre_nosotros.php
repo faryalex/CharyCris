@@ -16,29 +16,40 @@
     <link rel="stylesheet" href="Style/Stylenosotros.css">
 
 </head>
-<section class="about-us-area mt-50 section-padding-100">
-    <div class="contNosotros">
-        <div class="row">
-            <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                <h3>Misión</h3>
-                <p style="text-align: justify;">"Nuestra misión es deleitar a nuestros clientes con chocolates de la más alta
-                    calidad, elaborados exclusivamente a partir de cacao natural e ingredientes puros. Nos comprometemos
-                    a ofrecer un producto que respete la salud y el bienestar de nuestros consumidores, promoviendo al
-                    mismo tiempo prácticas sostenibles en la cadena de suministro del cacao. Trabajamos incansablemente
-                    para mantener la frescura y autenticidad de nuestros chocolates, y buscamos inspirar momentos de
-                    felicidad y indulgencia en cada bocado.</p>
-            </div>
-            <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
-                <h3>Visión</h3>
-                <p style="text-align: justify;">"Nuestra visión es convertirnos en líderes reconocidos en la industria del chocolate a base de cacao
-                    natural, estableciendo un estándar de excelencia en calidad, sabor y sostenibilidad. Queremos compartir la riqueza y la
-                    autenticidad de nuestros productos con consumidores de todas las culturas. Nos esforzamos por ser
-                    una empresa que marque la diferencia, promoviendo prácticas responsables y éticas en toda nuestra
-                    cadena de suministro.</p>
-            </div>
-        </div>
+<section>
+    <div class="text-container">
+        <h3>Misión</h3>
+        <p style="text-align: justify;">"Nuestra misión es deleitar a nuestros clientes con chocolates de la más alta
+            calidad, elaborados exclusivamente a partir de cacao natural e ingredientes puros. Nos comprometemos
+            a ofrecer un producto que respete la salud y el bienestar de nuestros consumidores, promoviendo al
+            mismo tiempo prácticas sostenibles en la cadena de suministro del cacao. Trabajamos incansablemente
+            para mantener la frescura y autenticidad de nuestros chocolates, y buscamos inspirar momentos de
+            felicidad y indulgencia en cada bocado.</p>
     </div>
+    <div class="owl-carousel">
+        <div class="item"><img src="ImgCharyCris/cacao3.jpg" alt="" class=""></div>
+        <div class="item"><img src="ImgCharyCris/cacao4.jpg" alt="" class=""></div>
+        <div class="item"><img src="ImgCharyCris/cacao5.jpg" alt="" class=""></div>
+        <div class="item"><img src="ImgCharyCris/img1.jpg" alt="" class=""></div>
+        <div class="item"><img src="ImgCharyCris/img0.jpg" alt="" class=""></div>
+        <div class="item"><img src="ImgCharyCris/img2.jpg" alt="" class=""></div>
+    </div>
+
+
+    <div class="text-container">
+        <h3>Visión</h3>
+        <p style="text-align: justify;">"Nuestra visión es convertirnos en líderes reconocidos en la industria del
+            chocolate
+            a base de cacao
+            natural, estableciendo un estándar de excelencia en calidad, sabor y sostenibilidad. Queremos compartir la
+            riqueza y la
+            autenticidad de nuestros productos con consumidores de todas las culturas. Nos esforzamos por ser
+            una empresa que marque la diferencia, promoviendo prácticas responsables y éticas en toda nuestra
+            cadena de suministro.</p>
+    </div>
+
 </section>
+
 <div class="owl-carousel">
     <div class="item"><img src="ImgCharyCris/cacao3.jpg" alt="" class=""></div>
     <div class="item"><img src="ImgCharyCris/cacao4.jpg" alt="" class=""></div>

@@ -8,10 +8,15 @@
     
 </head>
 <body>
+    <div>
     <div class="container-boton">
         <a href="https://wa.me/984888280?text=Quiero%20realizar%20un%20pedido%20de%sus productos" target="_blank">
-            <img class="boton" src="./media/icono.png" alt="">
+            <img class="imagen" src="./media/cacao.gif" alt="">
+            
         </a>
+        
+    </div>
+    <h2 class="texto">Chat</h2>
     </div>
 </body>
 </html>

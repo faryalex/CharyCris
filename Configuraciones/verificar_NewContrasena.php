@@ -30,7 +30,7 @@ $sql = "UPDATE usuario SET pass='$hashed_password' WHERE email='$email'";
 
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('Contraseña actualizada con exito');</script>"; 
-    echo "<script>window.location.href = './login.php';</script>";
+    echo "<script>window.location.href = '../login.php';</script>";
     
 
 } else {
