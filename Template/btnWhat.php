@@ -16,7 +16,7 @@
         </a>
         
     </div>
-    <h2 class="texto">Chat</h2>
+   
     </div>
 </body>
 </html>

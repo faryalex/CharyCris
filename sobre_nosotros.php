@@ -20,19 +20,17 @@
     <div class="text-container">
         <h3>Misión</h3>
         <p style="text-align: justify;">"Nuestra misión es deleitar a nuestros clientes con chocolates de la más alta
-            calidad, elaborados exclusivamente a partir de cacao natural e ingredientes puros. Nos comprometemos
-            a ofrecer un producto que respete la salud y el bienestar de nuestros consumidores, promoviendo al
-            mismo tiempo prácticas sostenibles en la cadena de suministro del cacao. Trabajamos incansablemente
-            para mantener la frescura y autenticidad de nuestros chocolates, y buscamos inspirar momentos de
-            felicidad y indulgencia en cada bocado.</p>
+                    calidad, elaborados exclusivamente a partir de cacao natural e ingredientes puros. Nos comprometemos
+                    a ofrecer un producto que respete la salud y el bienestar de nuestros consumidores, promoviendo al
+                    mismo tiempo prácticas sostenibles en la cadena de suministro del cacao. Trabajamos incansablemente
+                    para mantener la frescura y autenticidad de nuestros chocolates, y buscamos inspirar momentos de
+                    felicidad e indulgencia en cada bocado."</p>
     </div>
     <div class="owl-carousel">
         <div class="item"><img src="ImgCharyCris/cacao3.jpg" alt="" class=""></div>
         <div class="item"><img src="ImgCharyCris/cacao4.jpg" alt="" class=""></div>
         <div class="item"><img src="ImgCharyCris/cacao5.jpg" alt="" class=""></div>
-        <div class="item"><img src="ImgCharyCris/img1.jpg" alt="" class=""></div>
-        <div class="item"><img src="ImgCharyCris/img0.jpg" alt="" class=""></div>
-        <div class="item"><img src="ImgCharyCris/img2.jpg" alt="" class=""></div>
+
     </div>
 
 
@@ -45,7 +43,7 @@
             riqueza y la
             autenticidad de nuestros productos con consumidores de todas las culturas. Nos esforzamos por ser
             una empresa que marque la diferencia, promoviendo prácticas responsables y éticas en toda nuestra
-            cadena de suministro.</p>
+            cadena de suministro."</p>
     </div>
 
 </section>
@@ -54,9 +52,7 @@
     <div class="item"><img src="ImgCharyCris/cacao3.jpg" alt="" class=""></div>
     <div class="item"><img src="ImgCharyCris/cacao4.jpg" alt="" class=""></div>
     <div class="item"><img src="ImgCharyCris/cacao5.jpg" alt="" class=""></div>
-    <div class="item"><img src="ImgCharyCris/img1.jpg" alt="" class=""></div>
-    <div class="item"><img src="ImgCharyCris/img0.jpg" alt="" class=""></div>
-    <div class="item"><img src="ImgCharyCris/img2.jpg" alt="" class=""></div>
+ 
 </div>
 <section class="teachers-area section-padding-0-100">
     <div class="container">
@@ -76,7 +72,7 @@
                     </div>
                     <div class="teachers-info mt-30">
                         <h5>Teresa Rosario Salazar Trujillo</h5>
-                        <span>Inspiracion 🎗︎</span>
+                        <span>Inspiración 🎗︎</span>
                     </div>
                 </div>
             </div>
@@ -87,7 +83,7 @@
                     </div>
                     <div class="teachers-info mt-30">
                         <h5>Cristian Jose Castro Salazar</h5>
-                        <span>Inspiracion 🎗︎</span>
+                        <span>Inspiración 🎗︎</span>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@
 
             <div class="col-md-4 ftco-animate">
                 <div class="blog-entry">
-                    <img src="ImgCharyCris/img2.jpg" alt="Imagen 2" class="imagen-galeria">
+                    <img src="ImgCharyCris/fundador.jpg" alt="Imagen 2" class="imagen-galeria">
                     <div class="text p-4">
                         <p style="text-align: justify;">"El chocolate debe comerse con una sonrisa en la cara y el amor en el corazón." <br> <strong>- Anthony T. Hincks</strong></p>
                     </div>

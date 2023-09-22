@@ -63,7 +63,7 @@
                         </div>
                         <div class="course-content">
                             <h4>Envío Seguro:</h4>
-                            <p style="text-align: justify;">Enviamos tus chocolates con cuidado y garantizamos que lleguen en perfectas condiciones.
+                            <p style="text-align: justify;">Garantizamos el envio de tu producto eficazmente y en perfectas condiciones.
                             </p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                         <div class="course-content">
                             <h4>Atención al Cliente:</h4>
                             <p style="text-align: justify;">Estamos al teléfono, email, whatsapp, siempre que lo necesites, de lunes a Viernes,
-                                podemos ayudarte de 9:00 a 17:00</p>
+                               en nuestros horarios de 9:00 am a 17:00 pm.</p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>La Finca</h5>
-                            <p>La finca es el lugar en donde se produce la planta que nos llena de ilusion para poder complacer tu paladar con nuestro delicioso producto, aqui es donde nace el cacao para la produccion de un esquisisto chcocolate </p>
+                            <p>Es el lugar en donde se produce la planta que nos llena de ilusion para poder complacer tu paladar con nuestro delicioso producto, aqui es donde nace el cacao para la produccion de un exquisito chocolate. </p>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>Familia</h5>
-                            <p>Familia simbolo de la lucha de vida y la union por un bien comun aqui nace el ideal de llegar a conquistar sus corazones con el producto fabricado con mucho cariño</p>
+                            <p>Simbolo de la lucha de vida y la union por un bien comun, aqui nace el ideal de llegar a conquistar sus corazones con un producto fabricado desde el amor de quienes conformamos CharyCris.
 
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>Trabajo</h5>
-                            <p>El trabajo que se hace es organizado los roles son fundamentales para que la produccion de nuestro chocolate sea sana el trabajo es el esfuerzo diario de cada integrante </p>
+                            <p>Manejamos un esquema organizado mediante roles fundamentales para que la produccion de nuestro chocolate sea de calidad.</p>
 
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                         </div>
                         <div class="testimonial-content">
                             <h5>Fruto del Esfuerzo</h5>
-                            <p>Fruto de nuestro esfuerzo esperamos llenar los corazones de cada familia que deguste de nuestro producto esperamos seguir creciendo y llevando nuestra inpiracion en alto</p>
+                            <p>En CharyCris esperamos llenar los corazones de cada familia que deguste de nuestro producto, confiamos en seguir creciendo y llevando nuestra inpiracion en alto.</p>
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
             </div>
             <div class="row">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.791078941954!2d-78.4077574250354!3d-0.2117268997861869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTInNDIuMiJTIDc4wrAyNCcxOC43Ilc!5e0!3m2!1ses!2sec!4v1695149230657!5m2!1ses!2sec"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.791078941954!2d-78.4077574250354!3d-0.2117268997861869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTInNDIuMiJTIDc4wrAyNCcxOC43Ilc!5e0!3m2!1ses!2sec!4v1695149230657!5m2!1ses!2sec"
                     width="900" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
 
