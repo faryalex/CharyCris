@@ -1,23 +1,29 @@
 <?php
 // Conexión a la base de datos (ejemplo con MySQLi)
-$servername = "localhost";
-$username = "id19074660_bddcharycris";
-$password = "Asdaspro2018@";
-$dbname = "id19074660_bddcharycris";
+include_once('./conexion_bd.php');
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require '../PHPMailer/Exception.php';
+require '../PHPMailer/PHPMailer.php';
+require '../PHPMailer/SMTP.php';
+
+$mail = new PHPMailer(true);
 
 $email = $_POST['email'];
+$usuario = '';
+$consulta = "SELECT email FROM usuario WHERE email = '$email'";
+$consultauser = "SELECT user FROM usuario WHERE email = '$email'";
+$resultado = $conexion->query($consulta);
+$resultadouser = $conexion->query($consultauser);
 
-// Crear la conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar si hay errores en la conexión
-if ($conn->connect_error) {
-    die('Error en la conexión a la base de datos: ' . $conn->connect_error);
+if ($resultadouser->num_rows > 0) {
+    $row = $resultadouser->fetch_assoc();
+    $usuario = $row["user"];
+    
 }
-
-
-
-$codigoVerificacion = generarCodigoVerificacion();
 
 function generarCodigoVerificacion()
 {
@@ -25,22 +31,47 @@ function generarCodigoVerificacion()
     return mt_rand(100000, 999999);
 }
 
-$sql = "UPDATE usuario SET codigo_verificacion = '$codigoVerificacion' WHERE email = '$email'";
 
-if ($conn->query($sql) === true) {
+if ($resultado->num_rows > 0) {
+
+    
+    $codigoVerificacion = generarCodigoVerificacion();
+    $codigoVerificacionEncriptado = password_hash($codigoVerificacion, PASSWORD_BCRYPT);
+
+
+$sql = "UPDATE usuario SET codigo_verificacion = '$codigoVerificacionEncriptado' WHERE email = '$email'";
+
+if ($conexion->query($sql) === true) {
 // Construir el mensaje
-$mensaje = "Tu codigo de verificacion es: " . $codigoVerificacion . "\n";
+$mensaje = "Recuperación de Cuenta CharyCris " . "<br>";
+$mensaje .= "Nombre de Usuario:  " . $usuario. "<br>";
+$mensaje .= "Tu codigo de verificacion es: " . $codigoVerificacion . "<br>";
 
 // Enviar el correo electrónico
-$to = $email;
-$subject = 'Productos del carrito';
-$headers = 'From: remitente@ejemplo.com' . "\r\n" .
-           'Reply-To: remitente@ejemplo.com' . "\r\n" .
-           'X-Mailer: PHP/' . phpversion();
+try {
+    $mail->isSMTP();
+    $mail->Host       = 'smtp-mail.outlook.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'fary_alex@outlook.com';
+    $mail->Password   = '2022Asdaspro';
+    $mail->Port       = 587;
 
-mail($to, $subject, $mensaje, $headers);
-
+    $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
+    $mail->addAddress($email);
+    $mail->isHTML(true);
+    $mail->Subject = 'Recuperar Contraseña';
+    $mail->CharSet = 'UTF-8';
+    $mail->Body    = $mensaje;
+ $mail->send();
+    
+} catch (Exception $e) {
+  echo 'Ocurrió un error al enviar el correo: ' . $mail->ErrorInfo;
+}
+}
 ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,14 +103,15 @@ mail($to, $subject, $mensaje, $headers);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
 <?php 
 
 } else {
-    echo 'Error al guardar el código de verificación en la base de datos: ' . $conn->error;
+    // El correo no existe en la base de datos
+    echo "<script>alert('El correo ingresado no esta registrado');</script>"; 
+    echo "<script>window.history.back();</script>";
 }
 
-$conn->close();
+$conexion->close();
 
 ?>
+

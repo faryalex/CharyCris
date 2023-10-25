@@ -1,4 +1,15 @@
 <?php
+include_once('../Configuraciones/conexion_bd.php');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require '../PHPMailer/Exception.php';
+require '../PHPMailer/PHPMailer.php';
+require '../PHPMailer/SMTP.php';
+
+$mail = new PHPMailer(true);
+
 session_start();
 
 // Obtener el contenido del array del cuerpo de la solicitud
@@ -13,19 +24,8 @@ if (isset($_SESSION['usuario'])) {
     $usuario = $_SESSION['usuario'];
 }
 
-// Obtener la información del usuario desde la base de datos
-$servername = "localhost";
-$username = "id19074660_bddcharycris";
-$password = "Asdaspro2018@";
-$dbname = "id19074660_bddcharycris";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 $sql = "SELECT email, telefono FROM usuario WHERE user = '$usuario'";
-$result = $conn->query($sql);
+$result = $conexion->query($sql);
 
 $correo = "";
 $telefono = "";
@@ -35,22 +35,87 @@ if ($result->num_rows > 0) {
     $telefono = $row["telefono"];
 }
 
-$conn->close();
+$conexion->close();
 
 // Construir el mensaje
-$mensaje = "Nombre de usuario: " . $usuario . "\n";
-$mensaje .= "Correo: " . $correo . "\n";
-$mensaje .= "Teléfono: " . $telefono . "\n";
-$mensaje .= "Productos del carrito:\n" . print_r($allProducts, true);
+// Suponiendo que $allProducts es el array que contiene tus productos
+$mensaje1 .= "Compra realizada en CharyCris :<br>";
+$mensaje1 = "Nombre de usuario: " . $usuario . "<br>";
+$mensaje1 .= "Correo: " . $correo . "<br>";
+$mensaje1 .= "Teléfono: " . $telefono . "<br>";
 
-// Enviar el correo electrónico
-$to = 'fary_alex@outlook.com';
-$subject = 'Productos del carrito';
-$headers = 'From: remitente@ejemplo.com' . "\r\n" .
-           'Reply-To: remitente@ejemplo.com' . "\r\n" .
-           'X-Mailer: PHP/' . phpversion();
 
-mail($to, $subject, $mensaje, $headers);
+
+foreach ($allProducts as $product) {
+    $mensaje2 .= "=============================<br>";
+    $mensaje2 .= "Producto: " . $product['title'] . "<br>";
+    $mensaje2 .= "Cantidad: " . $product['quantity'] . "<br>";
+    $mensaje2 .= "Precio: " . $product['price'] . "<br>";
+    $mensaje2 .= "=============================<br>"; // Separador entre productos
+
+    $subtotal = (float)$product['quantity'] * (float)str_replace('$', '', $product['price']);
+    $total += $subtotal;
+}
+$mensaje2 .= "Total: $" . number_format($total, 2) . "<br>";
+
+$mensaje = $mensaje1 . $mensaje2;
+
+/////////////////////////////////
+try {
+    // Configuración de envío al administrador
+    $mail->isSMTP();
+    $mail->Host       = 'smtp-mail.outlook.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'fary_alex@outlook.com';
+    $mail->Password   = '2022Asdaspro';
+    $mail->Port       = 587;
+
+    $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
+    $mail->addAddress('maurohbdiezc@gmail.com', 'CharyCris');
+    $mail->isHTML(true);
+    $mail->Subject = 'Compra realizada';
+    $mail->CharSet = 'UTF-8';
+    $mail->Body    = $mensaje;
+    $mail->send();
+  
+    // Verifica si la dirección de correo del cliente no es igual a la dirección del administrador
+    if ($correo !== 'maurohbdiezc@gmail.com') {
+        // Configuración de envío al cliente
+        $mail->clearAddresses(); // Limpia las direcciones de correo previas
+        $mail->addAddress($correo); // Agrega la dirección del cliente
+        $mail->Subject = 'Compra realizada (Cliente)';
+        $mail->Body = $mensajecliente; // Usar el mensaje para el cliente
+        $mail->send();
+    }
+
+} catch (Exception $e) {
+
+}
+
+///////////////////////////////
+
+$textCliente = "Haz realizado una compra en CharyCris en unos instantes un asesor se pondrá en contacto contigo." ."<br>";
+$mensajecliente =$textCliente . $mensaje2;
+try {
+    $mail->isSMTP();
+    $mail->Host       = 'smtp-mail.outlook.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'fary_alex@outlook.com';
+    $mail->Password   = '2022Asdaspro';
+    $mail->Port       = 587;
+
+    $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
+    $mail->addAddress($correo);
+    $mail->isHTML(true);
+    $mail->Subject = 'Compra realizada';
+    $mail->CharSet = 'UTF-8';
+    $mail->Body    = $mensajecliente;
+ $mail->send();
+
+} catch (Exception $e) {
+
+}
+///////////////////////////////////
 
 // Enviar una respuesta JSON al cliente
 header('Content-Type: application/json');

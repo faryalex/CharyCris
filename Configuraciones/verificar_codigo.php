@@ -1,46 +1,34 @@
 <?php
+
+include_once('../Configuraciones/conexion_bd.php');
 // Verificar si el formulario ha sido enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener el código ingresado por el usuario y el correo electrónico asociado
     $codigoIngresado = $_POST["codigo"];
     $email = $_POST["email"];
-
-    // Realizar la conexión a la base de datos (reemplaza los valores con los de tu configuración)
-    $servername = "localhost";
-    $username = "id19074660_bddcharycris";  
-    $password = "Asdaspro2018@";
-    $dbname = "id19074660_bddcharycris";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verificar si la conexión fue exitosa
-    if ($conn->connect_error) {
-        die("Error en la conexión a la base de datos: " . $conn->connect_error);
-    }
-
     // Prevenir ataques de inyección SQL escapando los valores
-    $codigoIngresado = $conn->real_escape_string($codigoIngresado);
-    $email = $conn->real_escape_string($email);
+    $codigoIngresado = $conexion->real_escape_string($codigoIngresado);
+    $email = $conexion->real_escape_string($email);
 
     // Consultar la base de datos para obtener el código almacenado correspondiente al correo electrónico
     $sql = "SELECT codigo_verificacion FROM usuario WHERE email = '$email'";
-    $result = $conn->query($sql);
+    $result = $conexion->query($sql);
 
     if ($result && $result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        $codigoAlmacenado = $row["codigo_verificacion"];
+        $codigoAlmacenadoEncriptado = $row["codigo_verificacion"];
 
         // Comparar los códigos
-        if ($codigoIngresado === $codigoAlmacenado) {
+        if (password_verify($codigoIngresado, $codigoAlmacenadoEncriptado))  {
             // El código coincide
-            // Eliminar el código de verificación de la base de datos
-        // Eliminar el código de verificación de la base de datos
-        $sqldelete = "UPDATE `usuario` SET codigo_verificacion = '000000' WHERE email = '$email' AND codigo_verificacion='$codigoAlmacenado'";
+       
+        $sqldelete = "UPDATE `usuario` SET codigo_verificacion = '000000' WHERE email = '$email' AND codigo_verificacion='$codigoAlmacenadoEncriptado'";
 
-        if ($conn->query($sqldelete) === TRUE) {
+        if ($conexion->query($sqldelete) === TRUE) {
         
         } else {
-         echo "Error al eliminar el código de verificación: " . $conn->error;
+         echo "Error al eliminar el código de verificación: " . $conexion->error;
+       
          }
             ?>
 
@@ -81,8 +69,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php
 
         } else {
+          
             // El código no coincide
-            echo "<script>alert('El codigo ingresado no coincide');</script>"; 
+           echo "<script>alert('El codigo ingresado no coincide');</script>"; 
             echo "<script>window.history.back();</script>";
         }
     } else {
@@ -91,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Cerrar la conexión a la base de datos
-    $conn->close();
+    $conexion->close();
 }
 
 ?>

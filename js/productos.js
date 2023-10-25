@@ -25,11 +25,11 @@ productlist.addEventListener('click', e => {
                     const product = e.target.parentElement
                   
                     const infoProduct = {
-                        quantity: 1 ,
+                        quantity: 1,
                         title: product.querySelector(' h2').textContent,
                         price: product.querySelector(' p').textContent,
-            
                     }
+                    infoProduct.title = ` - ${infoProduct.title}`;
                     const exits = allProducts.some(product => product.title === infoProduct.title)
                     if(exits){
                         const products = allProducts.map(product =>{
@@ -126,19 +126,18 @@ const showHTML = () => {
 
 };
 
-const btn_pagar = document.querySelector('.cart-total')
+const btn_pagar = document.querySelector('.cart-total');
 btn_pagar.addEventListener('click', (e) => {
-    console.log("hola desdejs");
+    console.log("hola desde js");
 
     $.ajax({
         url: 'Configuraciones/verificar-sesion.php',
         dataType: 'text',
         success: function (response) {
             if (response == 'ok') {
-
                 Swal.fire({
                     title: 'Proceso de Compra.',
-                    text: 'Estimado cliente por el momento no disponemos de un pago en linea, si realiza su pedido ,un asesor se pondra en contacto via Whatsapp para cordinar el pago y entrega del pedido. Deseas realizar el pedido?',
+                    text: 'Estimado cliente por el momento no disponemos de un pago en línea, si realiza su pedido, un asesor se pondrá en contacto vía Whatsapp para coordinar el pago y entrega del pedido. ¿Deseas realizar el pedido?',
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonText: 'Continuar',
@@ -147,8 +146,7 @@ btn_pagar.addEventListener('click', (e) => {
                 }).then((result) => {
                     if (result.isConfirmed) {
                         // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Aceptar"
-
-                        console.log(allProducts)
+                        console.log(allProducts);
                         // Convertir el array a JSON
                         let jsonData = JSON.stringify(allProducts);
 
@@ -157,46 +155,45 @@ btn_pagar.addEventListener('click', (e) => {
                             method: 'POST',
                             body: jsonData
                         })
-                            .then(response => {
-                                if (!response.ok) {
-                                    throw new Error('Error en la solicitud');
-                                }
-                                return response.json();
-                            })
-                            .then(data => {
-                                console.log(data);
-                            })
-                            .catch(error => {
-                                console.error(error);
-                            });
-                        Swal.fire({
-                            title: 'Éxito',
-                            text: 'Pedido realizado con exito, en unos instantes un asesor se comunicara contigo',
-                            icon: 'success',
-                            confirmButtonText: 'Cerrar',
-                            allowOutsideClick: false, // Evita que se cierre haciendo clic afuera
-                        }).then((result) => {
-                            if (result.isConfirmed) {
-                                // Redirecciona o realiza alguna acción después de iniciar sesión
-                                // Puedes utilizar window.location.href para redireccionar
-                                window.location.href = "./index.php";
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Error en la solicitud');
+                            }else{
+                                Swal.fire({
+                                    title: 'Éxito',
+                                    text: 'Pedido realizado con éxito, en unos instantes un asesor se comunicará contigo',
+                                    icon: 'success',
+                                    confirmButtonText: 'Cerrar',
+                                    allowOutsideClick: false, // Evita que se cierre haciendo clic afuera
+                                }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        // Redirecciona o realiza alguna acción después de iniciar sesión
+                                        // Puedes utilizar window.location.href para redireccionar
+                                        window.location.href = "./index.php";
+                                    }
+                                });
                             }
-                        });
-
+                            return response.json();
+                        })
+                        
+                            // La solicitud al servidor se completó con éxito
+                            // Muestra la alerta de pedido realizado con éxito
+                           
+                    
+                   
+                       
                     } else if (result.dismiss === Swal.DismissReason.cancel) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar
-
+                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar"
                     }
                 });
-
             } else {
                 // Si la sesión no está iniciada, mostrar un mensaje de error
                 Swal.fire({
                     title: '',
-                    text: 'Debes Iniciar Sesion ',
+                    text: 'Debes Iniciar Sesión ',
                     icon: 'warning',
                     showCancelButton: true,
-                    confirmButtonText: 'Iniciar Sesion',
+                    confirmButtonText: 'Iniciar Sesión',
                     cancelButtonText: 'Cancelar'
                 }).then((result) => {
                     if (result.isConfirmed) {
@@ -204,17 +201,10 @@ btn_pagar.addEventListener('click', (e) => {
                         window.location.href = "./login.php";
                     } else if (result.dismiss === Swal.DismissReason.cancel) {
                         // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar"
-
                     }
                 });
-
             }
         }
     });
     return false;
-    /////////////
-
-
-
-    ///////////////
 });
