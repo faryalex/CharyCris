@@ -16,12 +16,12 @@
 </head>
 
 <body>
-<a href="#" id="btn-regresar" class="btn-flotante">
-  <span>
-    <i class="fas fa-arrow-left"></i>
-    Regresar
-  </span>
-</a>
+    <a href="#" id="btn-regresar" class="btn-flotante">
+        <span>
+            <i class="fas fa-arrow-left"></i>
+            Regresar
+        </span>
+    </a>
     <div class="row no-gutters">
         <div class="col no-gutters">
             <div class="leftside">
@@ -51,7 +51,7 @@
         </div>
         <div class="col no-gutters">
             <div class="rightside">
-            <section id="inicio" class="inicio">
+                <section id="inicio" class="inicio">
                     <div class="contenido-banner">
                         <div class="contenedor-img">
                             <img src="../media/mauro.jpg" alt="">
@@ -72,8 +72,9 @@
     </div>
 
     <script>
-  document.getElementById("btn-regresar").addEventListener("click", function(event) {
-    event.preventDefault();
-    window.location.href = "../contactanos.php";
-  });
-</script>
+        document.getElementById("btn-regresar").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../contactanos.php";
+        });
+    </script>
+</body>

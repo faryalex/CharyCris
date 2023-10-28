@@ -107,8 +107,9 @@
   background-color: #fff;
   z-index: 9999;
 }
+
 @media (max-width: 768px) {
   .logo-img {
-    width: 150px !important; /* Cambia el tamaño del logo en dispositivos móviles */
+    width: 150px !important;
   }
 }

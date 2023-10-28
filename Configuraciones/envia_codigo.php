@@ -1,5 +1,4 @@
 <?php
-// Conexión a la base de datos (ejemplo con MySQLi)
 include_once('./conexion_bd.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -22,96 +21,86 @@ $resultadouser = $conexion->query($consultauser);
 if ($resultadouser->num_rows > 0) {
     $row = $resultadouser->fetch_assoc();
     $usuario = $row["user"];
-    
+
 }
 
 function generarCodigoVerificacion()
 {
-    // Genera un código de verificación de 6 dígitos
     return mt_rand(100000, 999999);
 }
 
 
 if ($resultado->num_rows > 0) {
 
-    
+
     $codigoVerificacion = generarCodigoVerificacion();
     $codigoVerificacionEncriptado = password_hash($codigoVerificacion, PASSWORD_BCRYPT);
 
 
-$sql = "UPDATE usuario SET codigo_verificacion = '$codigoVerificacionEncriptado' WHERE email = '$email'";
+    $sql = "UPDATE usuario SET codigo_verificacion = '$codigoVerificacionEncriptado' WHERE email = '$email'";
 
-if ($conexion->query($sql) === true) {
-// Construir el mensaje
-$mensaje = "Recuperación de Cuenta CharyCris " . "<br>";
-$mensaje .= "Nombre de Usuario:  " . $usuario. "<br>";
-$mensaje .= "Tu codigo de verificacion es: " . $codigoVerificacion . "<br>";
+    if ($conexion->query($sql) === true) {
+        $mensaje = "Recuperación de Cuenta CharyCris " . "<br>";
+        $mensaje .= "Nombre de Usuario:  " . $usuario . "<br>";
+        $mensaje .= "Tu codigo de verificacion es: " . $codigoVerificacion . "<br>";
+        try {
+            $mail->isSMTP();
+            $mail->Host = 'smtp-mail.outlook.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'fary_alex@outlook.com';
+            $mail->Password = '2022Asdaspro';
+            $mail->Port = 587;
 
-// Enviar el correo electrónico
-try {
-    $mail->isSMTP();
-    $mail->Host       = 'smtp-mail.outlook.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'fary_alex@outlook.com';
-    $mail->Password   = '2022Asdaspro';
-    $mail->Port       = 587;
+            $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
+            $mail->addAddress($email);
+            $mail->isHTML(true);
+            $mail->Subject = 'Recuperar Contraseña';
+            $mail->CharSet = 'UTF-8';
+            $mail->Body = $mensaje;
+            $mail->send();
 
-    $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
-    $mail->addAddress($email);
-    $mail->isHTML(true);
-    $mail->Subject = 'Recuperar Contraseña';
-    $mail->CharSet = 'UTF-8';
-    $mail->Body    = $mensaje;
- $mail->send();
-    
-} catch (Exception $e) {
-  echo 'Ocurrió un error al enviar el correo: ' . $mail->ErrorInfo;
-}
-}
-?>
+        } catch (Exception $e) {
+            echo 'Ocurrió un error al enviar el correo: ' . $mail->ErrorInfo;
+        }
+    }
+    ?>
+    <!DOCTYPE html>
+    <html>
 
+    <head>
+        <title>Verificación de Código</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
 
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Verificación de Código</title>
-    <!-- Enlace a Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10">
-                <form method="post" action="verificar_codigo.php">
-                    <label for="codigo">Ingresa el código que recibiste en tu Correo electrónico:</label>
-                    <div class="input-group">
-                        <input type="text" id="codigo" name="codigo" class="form-control" required pattern="[0-9]+" title="Ingresa solo números">
-                        <!-- Agregar un campo oculto para enviar el correo electrónico al procesar el formulario de verificación -->
-                        <input type="hidden" name="email" value="<?php echo $email; ?>">
-                    </div>
-                    <div class="text-center mt-3"> <!-- Agregamos la clase 'mt-3' para dar espacio en la parte superior -->
-                        <button type="submit" class="btn btn-primary">Verificar</button>
-                        <a href="../login.php" class="btn btn-primary">Regresar</a>
-                    </div>
-                </form>
+    <body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10">
+                    <form method="post" action="verificar_codigo.php">
+                        <label for="codigo">Ingresa el código que recibiste en tu Correo electrónico:</label>
+                        <div class="input-group">
+                            <input type="text" id="codigo" name="codigo" class="form-control" required pattern="[0-9]+"
+                                title="Ingresa solo números">
+                            <input type="hidden" name="email" value="<?php echo $email; ?>">
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn-primary">Verificar</button>
+                            <a href="../login.php" class="btn btn-primary">Regresar</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 
-    <!-- Enlace a Bootstrap JS (opcional si necesitas funcionalidades específicas de Bootstrap) -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-<?php 
-
+    </html>
+<?php
 } else {
-    // El correo no existe en la base de datos
-    echo "<script>alert('El correo ingresado no esta registrado');</script>"; 
+    echo "<script>alert('El correo ingresado no esta registrado');</script>";
     echo "<script>window.history.back();</script>";
 }
 
 $conexion->close();
 
 ?>
-

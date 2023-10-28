@@ -6,13 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const usuario = document.getElementById("usuario").value;
     const contrasena = document.getElementById("contrasena").value;
-
-    // Realiza la validación de los campos, similar a como lo hiciste en el registro
-
-    // Si las validaciones pasan, puedes enviar el formulario aquí
     fetch('Configuraciones/autenticar.php', {
       method: 'POST',
-      body: new FormData(loginForm), // Envía los datos del formulario
+      body: new FormData(loginForm),
     })
       .then(response => response.json())
       .then(data => {
@@ -22,11 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
             text: 'Inicio de sesión exitoso',
             icon: 'success',
             confirmButtonText: 'Cerrar',
-            allowOutsideClick: false, // Evita que se cierre haciendo clic afuera
+            allowOutsideClick: false,
           }).then((result) => {
             if (result.isConfirmed) {
-              // Redirecciona o realiza alguna acción después de iniciar sesión
-              // Puedes utilizar window.location.href para redireccionar
               window.location.href = 'productos.php';
             }
           });

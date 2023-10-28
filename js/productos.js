@@ -19,11 +19,11 @@ productlist.addEventListener('click', e => {
         dataType: 'text',
         success: function (response) {
             if (response == 'ok') {
-                
-                if(e.target.classList.contains('btn-add-cart')){
+
+                if (e.target.classList.contains('btn-add-cart')) {
                     console.log("holaaa boton");
                     const product = e.target.parentElement
-                  
+
                     const infoProduct = {
                         quantity: 1,
                         title: product.querySelector(' h2').textContent,
@@ -31,25 +31,24 @@ productlist.addEventListener('click', e => {
                     }
                     infoProduct.title = ` - ${infoProduct.title}`;
                     const exits = allProducts.some(product => product.title === infoProduct.title)
-                    if(exits){
-                        const products = allProducts.map(product =>{
-                            if(product.title === infoProduct.title){
+                    if (exits) {
+                        const products = allProducts.map(product => {
+                            if (product.title === infoProduct.title) {
                                 product.quantity++;
                                 return product;
-                            }else{
+                            } else {
                                 return product;
                             }
                         })
                         allProducts = [...products]
-                    }else{
-            
-                    
-                    allProducts = [...allProducts, infoProduct]
+                    } else {
+
+
+                        allProducts = [...allProducts, infoProduct]
                     }
                     showHTML();
                 }
             } else {
-                // Si la sesión no está iniciada, mostrar un mensaje de error
                 Swal.fire({
                     title: '',
                     text: 'Debes Iniciar Sesion ',
@@ -59,10 +58,8 @@ productlist.addEventListener('click', e => {
                     cancelButtonText: 'Cancelar'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Aceptar"
                         window.location.href = "./login.php";
                     } else if (result.dismiss === Swal.DismissReason.cancel) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar"
 
                     }
                 });
@@ -71,8 +68,6 @@ productlist.addEventListener('click', e => {
     })
 })
 rowProduct.addEventListener('click', (e) => {
-
-
     if (e.target.classList.contains('icon-close')) {
         const product = e.target.parentElement
         const title = product.querySelector('p').textContent
@@ -80,8 +75,6 @@ rowProduct.addEventListener('click', (e) => {
         allProducts = allProducts.filter(product => product.title !== title)
     };
     showHTML();
-
-
 });
 
 const showHTML = () => {
@@ -119,11 +112,8 @@ const showHTML = () => {
         total = total + parseFloat(product.quantity * product.price.slice(1))
         totalOfProducts = totalOfProducts + product.quantity;
     });
-
     valortotal.innerText = `$${total} `
     countProducts.innerText = totalOfProducts;
-
-
 };
 
 const btn_pagar = document.querySelector('.cart-total');
@@ -142,52 +132,37 @@ btn_pagar.addEventListener('click', (e) => {
                     showCancelButton: true,
                     confirmButtonText: 'Continuar',
                     cancelButtonText: 'Cancelar',
-                    allowOutsideClick: false, // Evita que se cierre haciendo clic afuera
+                    allowOutsideClick: false,
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Aceptar"
                         console.log(allProducts);
-                        // Convertir el array a JSON
                         let jsonData = JSON.stringify(allProducts);
-
-                        // Enviar la solicitud POST al archivo PHP
                         fetch('Ventanas/enviar.php', {
                             method: 'POST',
                             body: jsonData
                         })
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error('Error en la solicitud');
-                            }else{
-                                Swal.fire({
-                                    title: 'Éxito',
-                                    text: 'Pedido realizado con éxito, en unos instantes un asesor se comunicará contigo',
-                                    icon: 'success',
-                                    confirmButtonText: 'Cerrar',
-                                    allowOutsideClick: false, // Evita que se cierre haciendo clic afuera
-                                }).then((result) => {
-                                    if (result.isConfirmed) {
-                                        // Redirecciona o realiza alguna acción después de iniciar sesión
-                                        // Puedes utilizar window.location.href para redireccionar
-                                        window.location.href = "./index.php";
-                                    }
-                                });
-                            }
-                            return response.json();
-                        })
-                        
-                            // La solicitud al servidor se completó con éxito
-                            // Muestra la alerta de pedido realizado con éxito
-                           
-                    
-                   
-                       
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error('Error en la solicitud');
+                                } else {
+                                    Swal.fire({
+                                        title: 'Éxito',
+                                        text: 'Pedido realizado con éxito, en unos instantes un asesor se comunicará contigo',
+                                        icon: 'success',
+                                        confirmButtonText: 'Cerrar',
+                                        allowOutsideClick: false,
+                                    }).then((result) => {
+                                        if (result.isConfirmed) {
+                                            window.location.href = "./index.php";
+                                        }
+                                    });
+                                }
+                                return response.json();
+                            })
                     } else if (result.dismiss === Swal.DismissReason.cancel) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar"
                     }
                 });
             } else {
-                // Si la sesión no está iniciada, mostrar un mensaje de error
                 Swal.fire({
                     title: '',
                     text: 'Debes Iniciar Sesión ',
@@ -197,10 +172,8 @@ btn_pagar.addEventListener('click', (e) => {
                     cancelButtonText: 'Cancelar'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Aceptar"
                         window.location.href = "./login.php";
                     } else if (result.dismiss === Swal.DismissReason.cancel) {
-                        // Aquí colocas el código que deseas ejecutar cuando el usuario hace clic en "Cancelar"
                     }
                 });
             }

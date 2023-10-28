@@ -9,14 +9,13 @@
   border-top-left-radius: 10px;
   box-shadow: 2px -2px 5px grey;
 }
+
 * {
   box-sizing: border-box;
 
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 body {
   margin: 0;
@@ -42,8 +41,6 @@ body {
   text-align: center;
 }
 
-
-
 .header-overlay {
   height: 100vh;
   width: 100vw;
@@ -67,7 +64,7 @@ body {
 
 .header-content p {
   font-size: 1.5rem;
- 
+
   padding-bottom: 2rem;
 }
 
@@ -79,9 +76,10 @@ body {
   text-decoration: none;
 }
 
-div a.active, div a:hover{
-	background: #7ebe6e;
-	transition: .5s;
+div a.active,
+div a:hover {
+  background: #7ebe6e;
+  transition: .5s;
 }
 
 @media (max-width: 960px) {

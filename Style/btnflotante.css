@@ -1,4 +1,4 @@
-.container-boton{
+.container-boton {
     background-color: rgb(152, 226, 130);
     position: fixed;
     z-index: 999;
@@ -12,28 +12,30 @@
     border: 1px solid transparent !important;
 }
 
-.container-boton:hover{
+.container-boton:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
 .imagen {
-    width: 150px; /* Cambia el valor del ancho */
-    height: 150px; /* Cambia el valor del alto */
+    width: 150px;
+    height: 150px;
     transition: ease 1s;
     border-radius: 50%;
     border: 0.5px solid transparent !important;
 }
 
-@keyframes efecto{
-    0%{
+@keyframes efecto {
+    0% {
         box-shadow: 0 0 0 0 rgba(79, 226, 111, 0.85);
     }
-    100%{
+
+    100% {
         box-shadow: 0 0 0 25px rgba(153, 212, 126, 0);
     }
 }
-.texto{
+
+.texto {
     background-color: rgb(152, 226, 130);
     position: fixed;
     z-index: 999;

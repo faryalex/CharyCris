@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Recuperar/ Cambiar Contraseña</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-     <link rel="stylesheet" href="../Style/login.css" />
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Style/login.css" />
+</head>
+
 <body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="container">
         <div class="row">
@@ -16,14 +18,14 @@
                         <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Enviar</button> 
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                         <a href="../login.php" class="btn btn-primary">Regresar</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 

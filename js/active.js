@@ -106,7 +106,7 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
-    
+
     // :: 9.0 Sticky Active Code
     if ($.fn.sticky) {
         $(".academy-main-menu").sticky({

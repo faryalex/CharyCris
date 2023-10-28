@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
           });
 
-        } else  {
+        } else {
           Swal.fire({
             title: 'Error',
             text: data.error,

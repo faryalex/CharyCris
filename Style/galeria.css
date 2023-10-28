@@ -1,5 +1,4 @@
 .hero-wrap {
-    background-image: url('ImgCharyCris/cacao1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,27 +22,34 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 .ftco-section {
-    margin-top: 40px;
-}
-.imagen-galeria {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease; 
+    padding: 20px 0;
 }
 
-.blog-entry {
+.row {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.col-md-4 {
+    flex-basis: calc(33.33% - 15px);
+    margin-bottom: 30px;
+}
+
+.imagen-galeria {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
 .imagen-galeria:hover {
     transform: scale(1.5);
 }

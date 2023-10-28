@@ -68,6 +68,7 @@
 .inicio .contenido-banner .redes a:hover {
   background-color: #1cb698;
 }
+
 @media (max-width: 767px) {
   .container {
     grid-template-columns: 1fr;
