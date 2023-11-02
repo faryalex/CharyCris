@@ -54,7 +54,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <h3>Quienes Conformamos CharyCris <br><br></h3>
+                    <h3>Quienes conformamos CharyCris <br><br></h3>
                 </div>
             </div>
         </div>

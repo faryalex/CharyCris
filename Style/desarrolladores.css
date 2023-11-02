@@ -53,8 +53,11 @@ body {
     font-size: 20px;
     transition: .3s;
 }
-
+#btn-regresar {
+    text-decoration: none;
+}
 .btn-flotante {
+
     position: fixed;
     top: 20px;
     left: 20px;
@@ -73,4 +76,38 @@ body {
 
 .btn-flotante:hover {
     background-color: #1CB698;
+}
+
+.align-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.texto-tercera-columna {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 300px;
+    border: 10px solid #1CB698;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        flex: 1;
+    }
+
+    .texto-tercera-columna {
+        margin-top: 20px;
+    }
 }

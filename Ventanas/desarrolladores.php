@@ -22,52 +22,54 @@
             Regresar
         </span>
     </a>
-    <div class="row no-gutters">
+    <div class="row no-gutters align-columns">
         <div class="col no-gutters">
-            <div class="leftside">
-
-                <section id="inicio" class="inicio">
-                    <div class="contenido-banner">
-                        <div class="contenedor-img">
-                            <img src="../media/pro6.jpeg" alt="">
-                        </div>
-                        <h1>FERNANDO CASTRO</h1>
-                        <h2>Tecnologo de Software - 19 años</h2>
-                        <div class="redes">
-                            <a href="https://www.facebook.com/marcelo.castro.524934" target="_blank"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/marcelo_castro.12/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://wa.me/0984888280" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="https://discord.gg/agncREpR" target="_blank"><i
-                                    class="fa-brands fa-discord"></i></i></a>
-                            <a href="https://www.tiktok.com/@marcelocastro45" target="_blank"><i
-                                    class="fa-brands fa-tiktok"></i></a>
-                        </div>
+            <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="../media/mauro.jpg" alt="">
                     </div>
-                </section>
-
+                    <h1>MAURO FARINANGO</h1>
+                    <h2>Tecnologo de Software - 26 años</h2>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/0998734675" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col no-gutters">
+            <div class="texto-tercera-columna">
+                <p style="text-align: justify;">En nombre de todo el equipo de Charycris, queremos expresar nuestro más
+                    sincero agradecimiento por el excepcional trabajo que han realizado al crear nuestra página web.
+                    Vuestra dedicación y experiencia han sido fundamentales para llevar nuestra presencia en línea al
+                    siguiente nivel.
+                    Sus habilidades para transformar nuestra visión en una realidad digital impresionante es
+                    verdaderamente destacable. La página web que diseñaron no solo es funcional y hermosa, sino que también
+                    refleja fielmente la esencia y los valores de nuestro emprendimiento.</p>
             </div>
         </div>
         <div class="col no-gutters">
-            <div class="rightside">
-                <section id="inicio" class="inicio">
-                    <div class="contenido-banner">
-                        <div class="contenedor-img">
-                            <img src="../media/mauro.jpg" alt="">
-                        </div>
-                        <h1>MAURO FARINANGO</h1>
-                        <h2>Tecnologo de Software - 26 años</h2>
-                        <div class="redes">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-discord"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://wa.me/0998734675"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
+            <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="../media/pro6.jpeg" alt="">
                     </div>
-                </section>
-            </div>
+                    <h1>FERNANDO CASTRO</h1>
+                    <h2>Tecnologo de Software - 19 años</h2>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/marcelo.castro.524934" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/marcelo_castro.12/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/0984888280" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@marcelocastro45" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 

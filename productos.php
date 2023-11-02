@@ -11,6 +11,7 @@
 		<h1>Tienda</h1>
 		<div class="container-icon">
 			<div class="container-cart-icon">
+			<button id="btn-comprar">Comprar</button>
 				<img src="ImgCharyCris/redes/carrito.png" alt="Carrito de Compras">
 				<div class="count-products">
 					<span id="contador-productos">0</span>
@@ -44,7 +45,7 @@
 				<img src="./media/vasogela.png" alt="producto" />
 			</figure>
 			<div class="info-product">
-				<h2>Vaso gelatinero chcocolate</h2>
+				<h2>Vaso gelatinero de chocolate</h2>
 				<p class="price">$0.50</p>
 				<button class="btn-add-cart">Añadir al carrito</button>
 			</div>

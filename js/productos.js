@@ -1,9 +1,18 @@
-const btnCart = document.querySelector('.container-cart-icon')
-const containerCartProducts = document.querySelector('.container-cart-products')
+const btnCart = document.querySelector('.container-cart-icon');
+const containerCartProducts = document.querySelector('.container-cart-products');
 
-btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
-})
+btnCart.addEventListener('click', (event) => {
+    event.stopPropagation();
+    containerCartProducts.classList.toggle('hidden-cart');
+});
+
+document.addEventListener('click', (event) => {
+    if (event.target !== containerCartProducts && !containerCartProducts.contains(event.target)) {
+        containerCartProducts.classList.add('hidden-cart');
+    }
+});
+
+
 const cartInfo = document.querySelector('.cart-product')
 const rowProduct = document.querySelector('.row-product')
 const productlist = document.querySelector('.container-items')

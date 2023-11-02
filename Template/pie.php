@@ -14,7 +14,7 @@
                         <div class="widget-title">
                             <h6>Visítanos</h6>
                         </div>
-                        <p>Conéctate con nosotros en nuestras redes sociales y únete a nuestra comunidad</p>
+                        <p>Conéctate con nosotros en nuestras redes sociales y únete a nuestra comunidad.</p>
                         <div class="footer-social-info">
                             <a href="https://www.facebook.com/charycris.2023?mibextid=ZbWKwL" target="_blank"><i
                                     class="fa fa-facebook"></i></a>
@@ -30,7 +30,7 @@
                 <div class="col-12 col-lg-4">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                            <h6>Contactanos</h6>
+                            <h6>Contáctanos</h6>
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-placeholder"></i>

@@ -43,10 +43,10 @@ session_start();
             <a class="nav-link" href="./productos.php">PRODUCTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./galeria.php">GALERIA</a>
+            <a class="nav-link" href="./galeria.php">GALERÍA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contactanos.php">CONTACTANOS</a>
+            <a class="nav-link" href="./contactanos.php">CONTÁCTANOS</a>
           </li>
         </ul>
 

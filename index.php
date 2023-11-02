@@ -28,7 +28,7 @@ include("./Template/cabecera.php");
                             <div class="hero-slides-content">
                                 <h4 data-animation="fadeInUp" data-delay="100ms">Nuestro cacao, Tu Placer</h4>
                                 <h2 data-animation="fadeInUp" data-delay="400ms">Explora el mundo <br>del chocolate y el
-                                    cacao</h2>
+                                    cacao.</h2>
                                 <a href="./productos.php" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Conoce
                                     Nuestros Productos</a>
                             </div>
@@ -56,7 +56,6 @@ include("./Template/cabecera.php");
     <div class="academy-courses-area section-padding-100-0">
         <div class="container">
             <div class="row">
-
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp"
                         data-wow-delay="300ms">
@@ -65,7 +64,7 @@ include("./Template/cabecera.php");
                         </div>
                         <div class="course-content">
                             <h4>Envío Seguro:</h4>
-                            <p style="text-align: justify;">Garantizamos el envio de tu producto eficazmente y en perfectas condiciones.
+                            <p style="text-align: justify;">Garantizamos el envío de tu producto eficazmente y en perfectas condiciones.
                             </p>
                         </div>
                     </div>
@@ -116,7 +115,7 @@ include("./Template/cabecera.php");
                         </div>
                         <div class="course-content">
                             <h4>Atención al Cliente:</h4>
-                            <p style="text-align: justify;">Estamos al teléfono, email, whatsapp, siempre que lo necesites, de lunes a Viernes,
+                            <p style="text-align: justify;">Estamos al teléfono, email, whatsapp, siempre que lo necesites, de Lunes a Viernes,
                                en nuestros horarios de 9:00 am a 17:00 pm.</p>
                         </div>
                     </div>
@@ -157,7 +156,7 @@ include("./Template/cabecera.php");
                         </div>
                         <div class="testimonial-content">
                             <h5>La Finca</h5>
-                            <p>Es el lugar en donde se produce la planta que nos llena de ilusion para poder complacer tu paladar con nuestro delicioso producto, aqui es donde nace el cacao para la produccion de un exquisito chocolate. </p>
+                            <p style="text-align: justify;">Es el lugar en donde se produce la planta que nos llena de ilusion para poder complacer tu paladar con nuestro delicioso producto, aqui es donde nace el cacao para la produccion de un exquisito chocolate. </p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +168,7 @@ include("./Template/cabecera.php");
                         </div>
                         <div class="testimonial-content">
                             <h5>Familia</h5>
-                            <p>Simbolo de la lucha de vida y la union por un bien comun, aqui nace el ideal de llegar a conquistar sus corazones con un producto fabricado desde el amor de quienes conformamos CharyCris.
+                            <p style="text-align: justify;">Símbolo de la lucha de vida y la unión por un bien común, aquí nace el ideal de llegar a conquistar sus corazones con un producto fabricado desde el amor de quienes conformamos CharyCris.
 
                         </div>
                     </div>
@@ -182,7 +181,7 @@ include("./Template/cabecera.php");
                         </div>
                         <div class="testimonial-content">
                             <h5>Trabajo</h5>
-                            <p>Manejamos un esquema organizado mediante roles fundamentales para que la produccion de nuestro chocolate sea de calidad.</p>
+                            <p style="text-align: justify;">Manejamos un esquema organizado mediante roles fundamentales para que la producción de nuestro chocolate sea de calidad.</p>
 
                         </div>
                     </div>
@@ -195,7 +194,7 @@ include("./Template/cabecera.php");
                         </div>
                         <div class="testimonial-content">
                             <h5>Fruto del Esfuerzo</h5>
-                            <p>En CharyCris esperamos llenar los corazones de cada familia que deguste de nuestro producto, confiamos en seguir creciendo y llevando nuestra inpiracion en alto.</p>
+                            <p style="text-align: justify;">En CharyCris esperamos llenar los corazones de cada familia que deguste de nuestro producto, confiamos en seguir creciendo y llevando nuestra inspiración en alto.</p>
                         </div>
                     </div>
                 </div>
@@ -203,7 +202,7 @@ include("./Template/cabecera.php");
             <div class="row">
                 <div class="col-12">
                     <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="800ms">
-                        <a href="./galeria.php" class="btn academy-btn">Visita nuestra galeria de Imagenes</a>
+                        <a href="./galeria.php" class="btn academy-btn">Visita nuestra galería de Imagenes</a>
                     </div>
                 </div>
             </div>

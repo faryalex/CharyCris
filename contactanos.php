@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Academy - Education Course Template</title>
     <link rel="icon" href="img/core-img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Style/contactanos.css">
 </head>
 
 <body>
@@ -85,8 +85,7 @@
                                 ellos, cada día es un paso más cerca de la excelencia tecnológica. ¡Aplaudimos su
                                 dedicación y creatividad!" 👏💻✨</p>
                             <img src="ImgCharyCris/redes/desarrollador.png">
-                            <a href="./Ventanas/desarrolladores.php" class="btn academy-btn btn-sm"
-                                target="_blank">Visitar</a>
+                            <a href="./Ventanas/desarrolladores.php" class="btn academy-btn btn-sm">Visitar</a>
                         </div>
                     </div>
                 </div>

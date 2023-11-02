@@ -1,4 +1,3 @@
-
 .btn-add-cart {
     padding: 15px 60px !important;
     background-color: #282a28 !important;
@@ -120,6 +119,7 @@ header {
 .hidden-cart {
     display: none;
 }
+
 .container-items {
     display: flex;
     flex-wrap: wrap;
@@ -133,19 +133,16 @@ header {
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
-    transition: transform 0.3s, border-color 0.3s; /* Agrega una transición para la transformación y el color del borde */
-    border: 2px solid transparent; /* Define un borde transparente */
+    transition: transform 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
 }
 
 .item:hover {
     transform: scale(1.1);
-    border-color: #69bc5f; /* Cambia el color del borde al pasar el mouse */
+    border-color: #69bc5f;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ... otros estilos ... */
-
-/* Estilos específicos para tu contenido */
 .item img {
     max-width: 50%;
     height: auto;
@@ -168,7 +165,6 @@ header {
     cursor: pointer;
 }
 
-/* Estilos adicionales para hacerlo responsive */
 @media (max-width: 768px) {
     .item {
         width: calc(50% - 10px);
@@ -222,4 +218,22 @@ header {
 
 .btn_pagar:hover {
     background-color: #022911;
+}
+
+#btn-comprar {
+    border: 4px solid #127644;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #f3f3f3;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #5a5c5c;
+
+}
+
+#btn-comprar:hover {
+    background-color: #127644;
+    color: #ffffff;
 }

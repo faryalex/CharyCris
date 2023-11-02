@@ -30,7 +30,7 @@
           <input class="form-control" type="text" name="correo" id="correo" placeholder="Ingrese su correo">
         </div>
         <div class="form-group">
-          <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+          <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="Ingrese su teléfono">
         </div>
         <button class="btn btn-primary" type="submit" id="boton-registrar">Registrar</button>
         <p>¿Ya tengo cuenta? <a href="./login.php">Iniciar sesión</a></p>
