@@ -1,3 +1,4 @@
+
 .btn-add-cart {
     padding: 15px 60px !important;
     background-color: #282a28 !important;
@@ -119,32 +120,67 @@ header {
 .hidden-cart {
     display: none;
 }
-
 .container-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item {
-    border-radius: 10px;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s; /* Agrega una transición para la transformación y el color del borde */
+    border: 2px solid transparent; /* Define un borde transparente */
 }
 
 .item:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    transform: scale(1.1);
+    border-color: #69bc5f; /* Cambia el color del borde al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* ... otros estilos ... */
+
+/* Estilos específicos para tu contenido */
 .item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
+    max-width: 50%;
+    height: auto;
 }
 
-.item figure {
-    overflow: hidden;
+.item h2 {
+    font-size: 25px;
 }
+
+.item .price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.item .btn-add-cart {
+    background: #69bc5f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos adicionales para hacerlo responsive */
+@media (max-width: 768px) {
+    .item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%;
+    }
+}
+
 
 .info-product {
     padding: 15px 30px;

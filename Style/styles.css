@@ -1,141 +1,141 @@
-.leftside,
-.rightside {
-    height: 100vh;
-    width: 100%;
-
-}
-
-.leftside {
-    background-color: rgb(166, 182, 182);
-}
-
-.rightside {
-    background-color: rgb(78, 68, 56);
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    margin: 0;
-    padding: 0;
-}
-
-.inicio {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-        url(img/imgat.jpeg);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-}
-
-.inicio .contenido-banner {
-    padding: 20px;
-    background-color: #1e2326;
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    border-radius: 40px;
-}
-
-.inicio .contenido-banner img {
-    margin-top: 40px;
-    border: 10px solid #4d3800;
-    display: block;
-    width: 80%;
-    margin: auto;
-    border-radius: 100%;
-}
-
-.inicio .contenido-banner h1 {
-    margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
-}
-
-.inicio .contenido-banner h2 {
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.inicio .contenido-banner .redes a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
-}
-
-.inicio .contenido-banner .redes a:hover {
-    background-color: #a0c519;
-}
-
-.portfolio {
-    background-color: #252A2E;
-    color: #fff;
-    padding: 30px 10px;
-}
-
-.portfolio .contenido-seccion {
-    max-width: 1000px;
-    margin: 0%;
-}
-
-.portfolio h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
+.main-footer-area {
+    background-color: #232323; }
+    .main-footer-area .footer-widget .widget-title {
+      margin-bottom: 45px; }
+      .main-footer-area .footer-widget .widget-title h6 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0;
+        color: #ffffff;
+        margin-top: 10px;
+        text-transform: uppercase; }
+    .main-footer-area .footer-widget .footer-social-info a {
+      display: inline-block;
+      color: #606060;
+      margin-right: 15px; }
+      .main-footer-area .footer-widget .footer-social-info a:hover, .main-footer-area .footer-widget .footer-social-info a:focus {
+        color: #ffffff; }
+    .main-footer-area .footer-widget .useful-links li a {
+      display: block;
+      color: #606060;
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-weight: 500; }
+      .main-footer-area .footer-widget .useful-links li a:hover, .main-footer-area .footer-widget .useful-links li a:focus {
+        color: #69bc5f; }
+    .main-footer-area .footer-widget .gallery-list a {
+      position: relative;
+      z-index: 1;
+      @flex (0 0 30%);
+      max-width: 30%;
+      margin-bottom: 15px;
+      cursor: zoom-in; }
+      .main-footer-area .footer-widget .gallery-list a::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;.main-footer-area {
+    background-color: #232323;
     padding: 20px 0;
+    text-align: center;
 }
 
-.portfolio .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.main-footer-area .footer-widget {
+    margin-bottom: 0;
 }
 
-.portfolio .galeria .proyecto {
+.main-footer-area .footer-widget .widget-title h6 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.main-footer-area .footer-widget .footer-social-info a {
+    display: inline-block;
+    color: #606060;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.main-footer-area .footer-widget .footer-social-info a:hover,
+.main-footer-area .footer-widget .footer-social-info a:focus {
+    color: #ffffff;
+}
+
+.main-footer-area .footer-widget .useful-links li a {
+    display: block;
+    color: #606060;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-footer-area .footer-widget .useful-links li a:hover,
+.main-footer-area .footer-widget .useful-links li a:focus {
+    color: #69bc5f;
+}
+
+.main-footer-area .footer-widget .gallery-list a {
     position: relative;
-    max-width: 225px;
-    height: fit-content;
-    margin: 10px;
-    cursor: pointer;
+    z-index: 1;
+    flex: 0 0 33.33%; /* Divide en tres columnas (33.33% de ancho) */
+    max-width: 33.33%;
+    margin-bottom: 20px;
+    cursor: zoom-in;
 }
 
-.portfolio .galeria .proyecto img {
-    width: 100%;
-    display: inline-block
-}
-
-.portfolio .galeria .proyecto .overlay {
+.main-footer-area .footer-widget .gallery-list a::after {
     position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
-    background: linear-gradient(rgba(126, 109, 37, 0.8), rgba(138, 127, 36, 0.8));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(97, 186, 109, 0.8);
     opacity: 0;
+    visibility: hidden;
+    transition-duration: 500ms;
 }
 
-.portfolio .galeria .proyecto .overlay h3 {
-    margin-bottom: 20px;
-    transition: 1s;
+.main-footer-area .footer-widget .gallery-list a:hover::after {
+    opacity: 0.8;
+    visibility: visible;
 }
 
-.portfolio .galeria .proyecto .overlay:hover {
-    opacity: 1;
+.main-footer-area .footer-widget .single-contact i {
+    color: #69bc5f;
+    font-size: 20px;
+    margin-right: 15px;
 }
 
-.portfolio .galeria .proyecto .overlay:hover h3 {
-    margin-bottom: 0px;
+.main-footer-area .footer-widget .single-contact p {
+    margin-bottom: 0;
 }
+
+/* Para centrar la imagen */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+        left: 0;
+        content: '';
+        background-color: rgba(97, 186, 109, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms; }
+      .main-footer-area .footer-widget .gallery-list a:hover::after {
+        opacity: 1;
+        visibility: visible; }
+    .main-footer-area .footer-widget .single-contact i {
+      color: #69bc5f;
+      font-size: 20px;
+      margin-right: 15px;
+      padding-top: 7px; }
+    .main-footer-area .footer-widget .single-contact p {
+      margin-bottom: 0; }
+    

@@ -45,13 +45,14 @@ if ($resultado->num_rows > 0) {
         $mensaje .= "Tu codigo de verificacion es: " . $codigoVerificacion . "<br>";
         try {
             $mail->isSMTP();
-            $mail->Host = 'smtp-mail.outlook.com';
+            $mail->Host = 'mail.charycris.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'fary_alex@outlook.com';
-            $mail->Password = '2022Asdaspro';
-            $mail->Port = 587;
+            $mail->Username = 'compras@charycris.com';
+            $mail->Password = 'compracharycris';
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port = 465;
 
-            $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
+            $mail->setFrom('compras@charycris.com', 'CharyCris');
             $mail->addAddress($email);
             $mail->isHTML(true);
             $mail->Subject = 'Recuperar Contraseña';

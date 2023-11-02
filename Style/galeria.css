@@ -1,3 +1,4 @@
+
 .hero-wrap {
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,12 +11,23 @@
 }
 
 .hero-wrap h1 {
-    opacity: 1;
-    animation: fadeIn 3s ease-in-out;
+    user-select: none;
+    opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar el elemento */
+    animation: fadeIn 3s ease-in-out forwards; /* Aplica la animación y mantiene el último estado */
     font-size: 3.5rem;
     color: #ece9e4;
     font-family: Arial, sans-serif;
+}
 
+/* Estilos para pantallas pequeñas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+    .hero-wrap {
+        background-attachment: scroll;
+    }
+
+    .hero-wrap h1 {
+        font-size: 2rem;
+    }
 }
 
 @keyframes fadeIn {

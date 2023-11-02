@@ -54,21 +54,22 @@ $mensaje = $mensaje1 . $mensaje2;
 
 try {
     $mail->isSMTP();
-    $mail->Host = 'smtp-mail.outlook.com';
+    $mail->Host = 'mail.charycris.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'fary_alex@outlook.com';
-    $mail->Password = '2022Asdaspro';
-    $mail->Port = 587;
+    $mail->Username = 'compras@charycris.com';
+    $mail->Password = 'compracharycris';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
-    $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
-    $mail->addAddress('maurohbdiezc@gmail.com', 'CharyCris');
+    $mail->setFrom('compras@charycris.com', 'CharyCris');
+    $mail->addAddress('pedidoscharycris@gmail.com', 'CharyCris');
     $mail->isHTML(true);
     $mail->Subject = 'Compra realizada';
     $mail->CharSet = 'UTF-8';
     $mail->Body = $mensaje;
     $mail->send();
 
-    if ($correo !== 'maurohbdiezc@gmail.com') {
+    if ($correo !== 'pedidoscharycris@gmail.com') {
         $mail->clearAddresses();
         $mail->addAddress($correo);
         $mail->Subject = 'Compra realizada (Cliente)';
@@ -84,13 +85,14 @@ $textCliente = "Haz realizado una compra en CharyCris en unos instantes un aseso
 $mensajecliente = $textCliente . $mensaje2;
 try {
     $mail->isSMTP();
-    $mail->Host = 'smtp-mail.outlook.com';
+    $mail->Host = 'mail.charycris.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'fary_alex@outlook.com';
-    $mail->Password = '2022Asdaspro';
-    $mail->Port = 587;
+    $mail->Username = 'compras@charycris.com';
+    $mail->Password = 'compracharycris';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
-    $mail->setFrom('fary_alex@outlook.com', 'CharyCris');
+    $mail->setFrom('compras@charycris.com', 'CharyCris');
     $mail->addAddress($correo);
     $mail->isHTML(true);
     $mail->Subject = 'Compra realizada';

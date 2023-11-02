@@ -8,10 +8,18 @@ $conexion = new mysqli($servername, $username, $password, $dbname);
 if ($conexion->connect_error) {
     die("Connection failed: " . $conexion->connect_error);
 }
+/* hosting
+  $servername = "localhost:3306";
+      $username = "charycri_bdd";
+      $password = "charycris2018@";
+      $dbname = "charycri_bdd";
+      
+      $conexion = new mysqli($servername, $username, $password, $dbname);
+      $conexion->set_charset("utf8");
+      if ($conexion->connect_error) {
+          die("Connection failed: " . $conexion->connect_error);
+      }
+*/
 
-
-
-//   $conexion=mysqli_connect("localhost","id19074660_bddcharycris","Asdaspro2018@","id19074660_bddcharycris");
-//     $conexion=mysqli_connect("localhost","root","","id19074660_bddcharycris");
 
 ?>
