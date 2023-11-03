@@ -65,7 +65,7 @@
 				<img src="./media/tarrina.png" alt="producto" />
 			</figure>
 			<div class="info-product">
-				<h2>Tarrina medio litro chocolate</h2>
+				<h2>Tarrina medio litro chocolate </h2>
 				<p class="price">$2.50</p>
 				<button class="btn-add-cart">Añadir al carrito</button>
 			</div>
