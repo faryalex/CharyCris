@@ -192,3 +192,4 @@ btn_pagar.addEventListener('click', (e) => {
     }
     return false;
 });
+
