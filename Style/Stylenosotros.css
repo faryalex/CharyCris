@@ -46,8 +46,18 @@
 .item {
   text-align: center;
 }
-
+.item img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; 
+}
 .owl-carousel .item img {
   width: 700px;
   height: 400px;
+}
+@media (min-width: 768px) {
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
 }

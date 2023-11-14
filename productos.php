@@ -75,7 +75,7 @@
 				<img src="./media/sasasasasasasa.png" alt="producto" />
 			</figure>
 			<div class="info-product">
-				<h2>Tableta de chococolate amargo</h2>
+				<h2>Tableta de chocolate amargo</h2>
 				<p class="price">$4</p>
 				<button class="btn-add-cart">Añadir al carrito</button>
 			</div>
@@ -85,7 +85,7 @@
 				<img src="./media/chcocodulce.png" alt="producto" />
 			</figure>
 			<div class="info-product">
-				<h2>Barra de chcocolate dulce</h2>
+				<h2>Barra de chocolate dulce</h2>
 				<p class="price">$2.00</p>
 				<button class="btn-add-cart">Añadir al carrito</button>
 			</div>
@@ -95,7 +95,7 @@
 				<img src="./media/chcocoforma.png" alt="producto" />
 			</figure>
 			<div class="info-product">
-				<h2>Caja de chcocolates en forma</h2>
+				<h2>Caja de chocolates en forma</h2>
 				<p class="price">$1.50</p>
 				<link rel="stylesheet" href="./Style/login.css" />
 				<button class="btn-add-cart">Añadir al carrito</button>

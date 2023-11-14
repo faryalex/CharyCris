@@ -129,7 +129,6 @@ btn_pagar.addEventListener('click', (e) => {
             confirmButtonText: 'Cerrar'
         });
     } else {
-        // Continuar con el proceso de compra si el carrito no está vacío
         $.ajax({
             url: 'Configuraciones/verificar-sesion.php',
             dataType: 'text',
