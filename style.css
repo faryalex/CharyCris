@@ -227,13 +227,13 @@ img {
     cursor: default;
   }
   .single-course-area .course-icon {
-      width: 150px; /* Ajusta el ancho deseado */
-      height: 150px; /* Ajusta la altura deseada */
-      font-size: 20px; /* Ajusta el tamaño de fuente deseado */
+      width: 150px;
+      height: 150px;
+      font-size: 20px;
       color: #ffffff;
       text-align: center;
       border-radius: 50%;
-      margin-right: 20px; /* Ajusta el espacio entre el ícono y el contenido */
+      margin-right: 20px;
       
   }
   
@@ -339,13 +339,12 @@ img {
     font-style: italic; 
  
 }
-/* ScrollUp */
 #scrollUp {
   background: #61ba6d;
   background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
   background: linear-gradient(to right, #61ba6d, #83c331);
   border-radius: 0;
-  bottom: 60px;
+  bottom: 130px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-size: 24px;
@@ -362,10 +361,16 @@ img {
     #scrollUp {
       bottom: 30px;
       right: 30px; } }
+      @media only screen and (max-width: 767px) {
+        #scrollUp {
+          bottom: 130px;
+          right: 60px;
+        }
+      }
 .main-footer-area {
   background-color: #232323 !important;
   text-align: center !important;
-  max-height: 300px;
+  max-height: 180%;
   overflow: hidden;
   padding: 50px 0;  
 }

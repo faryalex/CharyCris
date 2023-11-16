@@ -85,4 +85,21 @@ session_start();
       </div>
     </div>
   </nav>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var navbar = document.querySelector('.navbar');
+
+    document.addEventListener('click', function (event) {
+      var isClickInsideNavbar = navbar.contains(event.target);
+
+      if (!isClickInsideNavbar) {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+
+        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+          navbarToggler.click();
+        }
+      }
+    });
+  });
+</script>
 </body>

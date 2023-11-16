@@ -3,13 +3,13 @@
 <head>
   <title>Registro</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./Style/login.css" />
+  <link rel="stylesheet" href="./Style/registro.css" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-  <form method="post" action="./Configuraciones/autenticarregistro.php" class="form-register">
+  <form method="post" action="./Configuraciones/autenticarregistro.php" class="form-register fondo">
     <div class="container d-flex justify-content-center">
       <section class="form-login">
         <h4>Formulario Registro</h4>

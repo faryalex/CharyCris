@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <form id="login-form" method="post" action="Configuraciones/autenticar.php">
+  <form id="login-form" method="post" action="Configuraciones/autenticar.php" class = "fondo">
     <div class="container d-flex justify-content-center">
       <section class="form-login">
         <h5>INICIAR SESIÓN EN CHARYCRIS</h5>

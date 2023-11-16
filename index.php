@@ -1,5 +1,6 @@
 <?php
 include("./Template/cabecera.php"); 
+include("./Template/btnWhat.php");
 ?>
 <!DOCTYPE html>
 

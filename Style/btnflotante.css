@@ -18,8 +18,8 @@
 }
 
 .imagen {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transition: ease 1s;
     border-radius: 50%;
     border: 0.5px solid transparent !important;
@@ -35,16 +35,3 @@
     }
 }
 
-.texto {
-    background-color: rgb(152, 226, 130);
-    position: fixed;
-    z-index: 999;
-    border-radius: 40%;
-    bottom: 165px;
-    right: 75px;
-    padding: 5px;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
-    height: auto;
-    border: 1px solid transparent !important;
-}

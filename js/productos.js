@@ -1,14 +1,21 @@
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
+const whatsappContainer = document.getElementById('whatsapp-container');
 
 btnCart.addEventListener('click', (event) => {
     event.stopPropagation();
     containerCartProducts.classList.toggle('hidden-cart');
+    whatsappContainer.style.display = 'none';
 });
 
 document.addEventListener('click', (event) => {
     if (event.target !== containerCartProducts && !containerCartProducts.contains(event.target)) {
         containerCartProducts.classList.add('hidden-cart');
+        if (containerCartProducts.classList.contains('hidden-cart')) {
+            whatsappContainer.style.display = 'block';
+        } else {
+            whatsappContainer.style.display = 'none';
+        }
     }
 });
 
@@ -20,6 +27,7 @@ let allProducts = [];
 const valortotal = document.querySelector('.total-pagar');
 const countProducts = document.querySelector('#contador-productos');
 
+
 productlist.addEventListener('click', e => {
     $.ajax({
         url: 'Configuraciones/verificar-sesion.php',
@@ -27,7 +35,6 @@ productlist.addEventListener('click', e => {
         success: function (response) {
             if (response == 'ok') {
                 if (e.target.classList.contains('btn-add-cart')) {
-                    console.log("holaaa boton");
                     const product = e.target.parentElement;
 
                     const infoProduct = {
@@ -77,8 +84,10 @@ rowProduct.addEventListener('click', (e) => {
         const title = product.querySelector('p').textContent;
 
         allProducts = allProducts.filter(product => product.title !== title);
+        showHTML();
+        event.stopPropagation();
     }
-    showHTML();
+    
 });
 
 const showHTML = () => {
