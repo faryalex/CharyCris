@@ -27,30 +27,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <head>
                 <title>Crear Contraseña</title>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <link rel="stylesheet" href="../Style/ingresa_codigo.css" />
             </head>
-
-            <body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-                <div class="container mt-5">
-                    <h2 class="text-center">Crear Contraseña</h2>
-                    <form method="post" action="verificar_NewContrasena.php">
-                        <div class="mb-3">
-                            <label for="contrasena" class="form-label">Contraseña:</label>
-                            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="confirmar_contrasena" class="form-label">Confirmar Contraseña:</label>
-                            <input type="password" class="form-control" id="confirmar_contrasena" name="confirmar_contrasena"
-                                required>
-                        </div>
-                        <input type="hidden" name="email" value="<?php echo $email; ?>">
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <a href="../Ventanas/login.php" class="btn btn-primary">Regresar</a>
-                        </div>
-                    </form>
-                </div>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            </body>
+            <body class="d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center">
+      <section class="form-login">
+        <h5>Crear Contraseña</h5>
+        <form method="post" action="verificar_NewContrasena.php">
+          <div class="form-group">
+          <label for="contrasena" class="form-label">Contraseña:</label>
+         <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+          </div>
+          <div class="form-group">
+          <label for="confirmar_contrasena" class="form-label">Confirmar Contraseña:</label>
+        <input type="password" class="form-control" id="confirmar_contrasena" name="confirmar_contrasena"required>
+          </div>
+          <input type="hidden" name="email" value="<?php echo $email; ?>">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        <a href="../Ventanas/login.php" class="btn btn-primary">Regresar</a>
+        </form>
+      </section>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 
             </html>
 

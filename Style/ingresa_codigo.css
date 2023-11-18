@@ -1,0 +1,115 @@
+
+.btn-primary {
+    background-color: #28a745 !important;
+}
+
+.btn-primary:hover {
+    background-color: #023306 !important;
+}
+
+.fondo {
+    width: 90%;
+    max-width: 100%;
+    margin: 50px auto 20px;
+    padding: 40px;
+    background: linear-gradient(45deg, #28a745, #000000);
+    border-radius: 30px;
+}
+
+.form-login {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; /* Ajuste de relleno */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+@media (min-width: 992px) {
+    .fondo,
+    .form-login {
+        max-width: 600px;
+        margin: 50px auto 20px;
+    }
+}
+
+.form-login:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border: 2px solid rgb(0, 255, 200);
+    z-index: -1;
+    animation: borderChange 5s infinite;
+}
+
+@keyframes borderChange {
+    0% {
+        border-color: #0d0d0e;
+    }
+
+    50% {
+        border-color: rgb(0, 255, 98);
+    }
+
+    100% {
+        border-color: rgb(13, 134, 93);
+    }
+}
+
+.form-login h5 {
+    color: #000000;
+    font-size: 2.5rem !important;
+}
+
+.form-group label {
+    font-size: 1.5rem;
+}
+
+.form-control {
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px auto;
+}
+
+.btn-primary {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.form-login label {
+    color: #000000;
+}
+
+.form-login button {
+    background-color: #00ff00;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.form-login button:hover {
+    background-color: #005500;
+    border-radius: 20px;
+}
+
+.fondo p,
+.fondo a {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 750px) {
+    .form-login h4 {
+        font-size: 2rem;
+    }
+
+    .form-group label {
+        font-size: 1.2rem;
+    }
+
+}

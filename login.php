@@ -10,15 +10,15 @@
   <form id="login-form" method="post" action="Configuraciones/autenticar.php" class = "fondo">
     <div class="container d-flex justify-content-center">
       <section class="form-login">
-        <h5>INICIAR SESIÓN EN CHARYCRIS</h5>
+        <h5>Iniciar Sesión</h5>
         <form>
           <div class="form-group">
             <label for="usuario">Usuario</label>
-            <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Usuario">
+            <input class="form-control" type="text" name="usuario" id="usuario">
           </div>
           <div class="form-group">
             <label for="contrasena">Contraseña</label>
-            <input class="form-control" type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
+            <input class="form-control" type="password" name="contrasena" id="contrasena">
           </div>
           <button type="submit" class="btn btn-primary">Ingresar</button>
           <p><a href="./Ventanas/recuperarpass.php">¿Olvidaste tu Contraseña?</a></p>

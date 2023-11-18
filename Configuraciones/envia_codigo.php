@@ -71,27 +71,25 @@ if ($resultado->num_rows > 0) {
     <head>
         <title>Verificación de Código</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../Style/ingresa_codigo.css" />
     </head>
 
-    <body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10">
-                    <form method="post" action="verificar_codigo.php">
-                        <label for="codigo">Ingresa el código que recibiste en tu Correo electrónico:</label>
-                        <div class="input-group">
-                            <input type="text" id="codigo" name="codigo" class="form-control" required pattern="[0-9]+"
+    <body class="d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center">
+      <section class="form-login">
+        <h5>Recuperar/Cambiar Contraseña</h5>
+        <form id="recuperarpass" method="post" action="verificar_codigo.php">
+          <div class="form-group">
+          <label for="codigo">Ingresa el código que recibiste en tu Correo electrónico:</label>
+          <input type="text" id="codigo" name="codigo" class="form-control" required pattern="[0-9]+"
                                 title="Ingresa solo números">
-                            <input type="hidden" name="email" value="<?php echo $email; ?>">
-                        </div>
-                        <div class="text-center mt-3">
-                            <button type="submit" class="btn btn-primary">Verificar</button>
-                            <a href="../login.php" class="btn btn-primary">Regresar</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+            <input class="form-control" type="hidden" name="email" value="<?php echo $email; ?>">
+          </div>
+          <button type="submit" class="btn btn-primary">Verificar</button>
+         <a href="../login.php" class="btn btn-primary">Regresar</a>
+        </form>
+      </section>
+    </div>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 
